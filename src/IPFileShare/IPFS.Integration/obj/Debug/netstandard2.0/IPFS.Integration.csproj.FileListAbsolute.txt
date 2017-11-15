@@ -1,0 +1,10 @@
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.csproj.CoreCompileInputs.cache
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.AssemblyInfoInputs.cache
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.AssemblyInfo.cs
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Integration.deps.json
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Integration.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Integration.pdb
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Results.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Results.pdb
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.pdb

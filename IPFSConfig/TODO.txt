@@ -1,0 +1,13 @@
+GetMYpeer info
+Get Peers
+
+Create ipfs Win Service Wrapper 
+Handel files to upload
+
+Create WebSite
+
+Create SPA with info
+
+Create Android Client
+
+Done Min Version

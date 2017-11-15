@@ -1,0 +1,14 @@
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Client.deps.json
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Client.runtimeconfig.json
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Client.runtimeconfig.dev.json
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Client.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Client.pdb
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Integration.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Results.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Integration.pdb
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Results.pdb
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/obj/Debug/netcoreapp2.0/IPFS.Client.csproj.CoreCompileInputs.cache
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/obj/Debug/netcoreapp2.0/IPFS.Client.AssemblyInfoInputs.cache
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/obj/Debug/netcoreapp2.0/IPFS.Client.AssemblyInfo.cs
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/obj/Debug/netcoreapp2.0/IPFS.Client.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/obj/Debug/netcoreapp2.0/IPFS.Client.pdb
