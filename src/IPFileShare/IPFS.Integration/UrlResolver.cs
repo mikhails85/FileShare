@@ -52,6 +52,16 @@ namespace IPFS.Integration
             return GetUrl(baseUrl, "cat", options);
         }
         
+        public static Uri GetPeerInfoUrl(Uri baseUrl, params string[] options)
+        {
+            return GetUrl(baseUrl, "id", options);
+        }
+        
+        public static Uri GetPeersUrl(Uri baseUrl, params string[] options)
+        {
+            return GetUrl(baseUrl, "swarm/peers", options);
+        }
+        
         private static Uri GetUrl(Uri baseUrl, string command, params string[] options)
         {
             var q = new StringBuilder();
