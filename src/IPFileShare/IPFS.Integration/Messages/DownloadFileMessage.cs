@@ -21,7 +21,7 @@ namespace IPFS.Integration.Messages
         {
             var result = new Result<Stream>();
             
-            var url = UrlResolver.GetDownloadUrl(this.Client.GatewayUrl, "arg={path}");
+            var url = UrlResolver.GetDownloadUrl(this.Client.GatewayUrl, $"arg={path}");
             Log.WarningMessage(url.ToString());
             
             var response = new Result<Stream>();

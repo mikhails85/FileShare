@@ -35,7 +35,7 @@ namespace IPFS.Integration.Messages
             
             var json = JObject.Parse(response.Value);
             
-            var hashList = ((JArray)json["Pinned"])
+            var hashList = ((JArray)json["Pins"])
                 .Select(link => new IPFSHash{
                     Name = (string)link,
                     Hash = (string)link}).ToList();

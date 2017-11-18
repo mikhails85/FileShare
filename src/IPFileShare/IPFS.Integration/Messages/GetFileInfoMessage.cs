@@ -18,7 +18,7 @@ namespace IPFS.Integration.Messages
         
         private ILogger Log => Logger.Log<GetFileInfoMessage>();
         
-        public async Task<Result<IPFSObjectInfo>> SendAsync(string hash, string name)
+        public async Task<Result<IPFSObjectInfo>> SendAsync(string hash, string name = null)
         {
             var result = new Result<IPFSObjectInfo>();
             
@@ -39,7 +39,7 @@ namespace IPFS.Integration.Messages
             
             var info = new IPFSObjectInfo
             {
-              Name = name,
+              Name = string.IsNullOrWhiteSpace(name) ? (string)jo["Name"] : name,
               Hash = (string)jo["Hash"],
               Size = (long)jo["Size"],
               IsDirectory = ((string)jo["Type"]).ToLower().Trim() == "directory"

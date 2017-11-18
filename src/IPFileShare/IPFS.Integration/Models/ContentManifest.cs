@@ -6,6 +6,13 @@ namespace IPFS.Integration.Models
 {
     public class ContentManifest
     {
+        public DateTime LastMidification {get; set;}
+        public string PeedID {get; set;}
+        public List<ContentManifestItem> Content {get; set;}
+    }
+    
+    public class ContentManifestItem
+    {
         public string Title { get; set; }
         public string ThumbnailHash { get; set; }
         public string Description { get; set; }

@@ -15,9 +15,9 @@ namespace IPFS.Client
             
             var rest = new RESTClient("http://0.0.0.0:8081/");
             
-            var result = await rest.Message<AddFolderMessage>().SendAsync("./Test");
+            var result = await rest.Message<DownloadFileMessage>().SendAsync("QmSwaM2teG1vXyhcmKGjAwkWw6vcYF948Yu2TSzFGEAjUZ");
             
-            Console.WriteLine(result.Success ? result.Value.Hash : result.Errors[0].Message);
+            Console.WriteLine(result.Success ? "Success" : result.Errors[0].Message);
             
             Console.WriteLine("Done");
         }
