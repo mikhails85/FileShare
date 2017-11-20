@@ -9,7 +9,8 @@
       "IPFS.Client/1.0.0": {
         "dependencies": {
           "IPFS.Integration": "1.0.0",
-          "IPFS.Results": "1.0.0"
+          "IPFS.Results": "1.0.0",
+          "IPFS.Runner": "1.0.0"
         },
         "runtime": {
           "IPFS.Client.dll": {}
@@ -413,6 +414,14 @@
         "runtime": {
           "IPFS.Results.dll": {}
         }
+      },
+      "IPFS.Runner/1.0.0": {
+        "dependencies": {
+          "IPFS.Results": "1.0.0"
+        },
+        "runtime": {
+          "IPFS.Runner.dll": {}
+        }
       }
     }
   },
@@ -729,6 +738,11 @@
       "sha512": ""
     },
     "IPFS.Results/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IPFS.Runner/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

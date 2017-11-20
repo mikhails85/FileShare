@@ -12,7 +12,7 @@ namespace IPFS.Runner
     //
     public static class ProcessManager
     {
-        public static Result<ProcessContext> CreateProcess(string appId, string path, params string[] options)
+        public static Result<ProcessContext> CreateProcess(string appId)
         {
            var result = new Result<ProcessContext>();
            var process = new ProcessContext(appId);
