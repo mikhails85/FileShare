@@ -47,6 +47,11 @@ namespace IPFS.Integration
             return GetUrl(baseUrl, "name/publish", options);
         }
         
+        public static Uri GetResolveUrl(Uri baseUrl, params string[] options)
+        {
+            return GetUrl(baseUrl, "name/resolve", options);
+        }
+        
         public static Uri GetDownloadUrl(Uri baseUrl, params string[] options)
         {
             return GetUrl(baseUrl, "cat", options);

@@ -8,7 +8,7 @@ namespace IPFS.Integration.Models
     {
         public DateTime LastMidification {get; set;}
         public string PeedID {get; set;}
-        public List<ContentManifestItem> Content {get; set;}
+        public List<ContentManifestItem> Content {get; set;} = new List<ContentManifestItem>();
     }
     
     public class ContentManifestItem

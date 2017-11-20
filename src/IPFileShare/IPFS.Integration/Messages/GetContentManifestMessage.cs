@@ -21,7 +21,15 @@ namespace IPFS.Integration.Messages
         {
             var result = new Result<ContentManifest>(); 
             
-            var response = await this.Client.Message<ReadTextMessage>().SendAsync(hash);
+            var pathResult = await this.Client.Message<ResolvePublishedObjectMessage>().SendAsync();
+            
+            if(!pathResult.Success)
+            {
+                result.AddErrors(pathResult.Errors);
+                return result;
+            }
+            
+            var response = await this.Client.Message<ReadTextMessage>().SendAsync(pathResult.Value);
             
             if(!response.Success)
             {
