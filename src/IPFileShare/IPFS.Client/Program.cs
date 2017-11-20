@@ -1,9 +1,9 @@
-using System;
 using IPFS.Integration;
 using IPFS.Integration.Messages;
-using IPFS.Integration.Models;
 using IPFS.Integration.Utils.Log;
+using System;
 using System.Threading.Tasks;
+
 namespace IPFS.Client
 {
     class Program

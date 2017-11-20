@@ -1,19 +1,14 @@
-using System;
-using System.Linq;
-using LightBDD.Framework;
-using LightBDD.Framework.Commenting;
-using LightBDD.XUnit2;
-using Xunit;
-using Xunit.Abstractions;
-using IPFS.Integration;
 using IPFS.Integration.Messages;
 using IPFS.Integration.Models;
-using IPFS.Results;
-using IPFS.Integration.Utils.Log;
 using IPFS.Integration.Tests.Helpers;
-using System.Threading.Tasks;
+using IPFS.Integration.Utils.Log;
+using IPFS.Results;
+using LightBDD.XUnit2;
+using System;
 using System.Collections.Generic;
-//http://core-net-mikhails85.c9users.io:8081/api/v0/name/resolve
+using System.Linq;
+using Xunit;
+using Xunit.Abstractions;
 
 namespace IPFS.Integration.Tests.Features.UserCase
 {
@@ -53,12 +48,14 @@ namespace IPFS.Integration.Tests.Features.UserCase
             var dirs = filesResult.Value.Where(x=>x.IsDirectory).ToList();
             var filesInDir = dirs.SelectMany(x=>x.Links).Where(x=>!x.IsDirectory).Select(x=>x.Hash).ToList();
             var files = filesResult.Value.Where(x=>!x.IsDirectory && !filesInDir.Contains(x.Hash)).ToList();
-            
-            manifest = new ContentManifest();
-            manifest.PeedID = peerInfo.Value.ID;
-            manifest.LastMidification = DateTime.UtcNow;
-            
-            foreach(var dir in dirs)
+
+            manifest = new ContentManifest
+            {
+                PeedID = peerInfo.Value.ID,
+                LastMidification = DateTime.UtcNow
+            };
+
+            foreach (var dir in dirs)
             {
                 manifest.Content.Add(new ContentManifestItem{
                     ResourceHash = dir.Hash,

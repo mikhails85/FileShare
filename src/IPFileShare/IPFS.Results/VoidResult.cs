@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace IPFS.Results
 {
@@ -11,15 +9,10 @@ namespace IPFS.Results
         
         public virtual bool Success => !Errors.Any();
      
-        private readonly List<Error> errors;   
-        public VoidResult()
-        {
-            this.errors = new List<Error>();
-        }
-        
-        public void AddErrors(params Error[] errors)
-        {
-            this.errors.AddRange(errors);
-        }
+        private readonly List<Error> errors;
+
+        public VoidResult() => errors = new List<Error>();
+
+        public void AddErrors(params Error[] errors) => this.errors.AddRange(errors);
     }
 }

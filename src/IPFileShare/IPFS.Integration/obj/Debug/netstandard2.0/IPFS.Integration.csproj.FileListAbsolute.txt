@@ -8,3 +8,14 @@
 /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Results.pdb
 /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.dll
 /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.pdb
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Integration.deps.json
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Integration.dll
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Integration.pdb
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Results.dll
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Results.pdb
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.csprojResolveAssemblyReference.cache
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.csproj.CoreCompileInputs.cache
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.AssemblyInfoInputs.cache
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.AssemblyInfo.cs
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.dll
+C:\MyProjects\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.pdb

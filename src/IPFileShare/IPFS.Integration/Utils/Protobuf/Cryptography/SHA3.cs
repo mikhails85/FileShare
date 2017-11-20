@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace IPFS.Integration.Utils.Protobuf.Cryptography
 {
-   internal abstract class SHA3 :
+    internal abstract class SHA3 :
 #if PORTABLE
     IHashAlgorithm
 #else

@@ -1,11 +1,8 @@
+using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 using System.Security.Cryptography;
-
-using Google.Protobuf;
 
 namespace IPFS.Integration.Utils.Protobuf
 {
@@ -169,9 +166,11 @@ namespace IPFS.Integration.Utils.Protobuf
             if (digest == null)
                 throw new ArgumentNullException("digest");
 
-            HashingAlgorithm a;
-            if (!HashingAlgorithm.Names.TryGetValue(algorithmName, out a))
+            if (!HashingAlgorithm.Names.TryGetValue(algorithmName, out HashingAlgorithm a))
+            {
                 throw new ArgumentException(string.Format("The IPFS hashing algorithm '{0}' is unknown.", algorithmName));
+            }
+
             Algorithm = a;
 
             if (Algorithm.DigestSize != digest.Length)

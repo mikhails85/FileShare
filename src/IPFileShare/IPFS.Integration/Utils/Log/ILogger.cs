@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using IPFS.Results;
 
 namespace IPFS.Integration.Utils.Log
@@ -11,7 +8,6 @@ namespace IPFS.Integration.Utils.Log
         void Error(Error error, string message);
         void Result<T> (Result<T> result, string message);
         void Result (VoidResult result, string message);
-        
         void ErrorMessage(string message);
         void WarningMessage (string message);
     }

@@ -1,16 +1,13 @@
-using System.Linq;
+using IPFS.Integration.Messages;
+using IPFS.Integration.Models;
+using IPFS.Integration.Tests.Helpers;
+using IPFS.Integration.Utils.Log;
+using IPFS.Results;
 using LightBDD.Framework;
 using LightBDD.Framework.Commenting;
 using LightBDD.XUnit2;
 using Xunit;
 using Xunit.Abstractions;
-using IPFS.Integration;
-using IPFS.Integration.Messages;
-using IPFS.Integration.Models;
-using IPFS.Results;
-using IPFS.Integration.Utils.Log;
-using IPFS.Integration.Tests.Helpers;
-using System.Threading.Tasks;
 
 namespace IPFS.Integration.Tests.Features.ClientStart
 {

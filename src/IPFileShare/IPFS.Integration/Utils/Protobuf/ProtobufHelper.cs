@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
+using Google.Protobuf;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Google.Protobuf;
 
 namespace IPFS.Integration.Utils.Protobuf
 {
@@ -15,6 +11,7 @@ namespace IPFS.Integration.Utils.Protobuf
             .Single(m =>
                 m.Name == "WriteRawBytes" && m.GetParameters().Count() == 1
             );
+
         private static MethodInfo readRawBytes = typeof(CodedInputStream)
             .GetMethods(BindingFlags.NonPublic | BindingFlags.Instance)
             .Single(m =>

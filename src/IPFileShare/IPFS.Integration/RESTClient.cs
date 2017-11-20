@@ -1,16 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using IPFS.Integration.Errors;
 using IPFS.Integration.Messages;
 using IPFS.Results;
-using System.Threading.Tasks;
-using System.Net.Http;
-using System.IO;
-using System.Text;
 using Newtonsoft.Json;
-using IPFS.Integration.Errors;
+using System;
+using System.IO;
 using System.Net;
+using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
+
 namespace IPFS.Integration
 {
     public class RESTClient
@@ -20,15 +18,15 @@ namespace IPFS.Integration
         public RESTClient(string gatewayUrl)
         {
             var url = new Uri(gatewayUrl);
-            this.GatewayUrl = new Uri(url, "api/v0/");
-            
-            Console.WriteLine(this.GatewayUrl.ToString());
+            GatewayUrl = new Uri(url, "api/v0/");            
         }
         
         public T Message<T>() where T : IApiMessage, new()
         {
-            var request = new T();
-            request.Client = this;
+            var request = new T
+            {
+                Client = this
+            };
             return request; 
         }
         

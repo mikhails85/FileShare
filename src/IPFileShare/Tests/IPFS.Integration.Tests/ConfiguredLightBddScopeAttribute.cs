@@ -1,5 +1,5 @@
-using LightBDD.Core.Configuration;
 using IPFS.Integration.Tests;
+using LightBDD.Core.Configuration;
 using LightBDD.Framework.Reporting.Configuration;
 using LightBDD.Framework.Reporting.Formatters;
 using LightBDD.XUnit2;

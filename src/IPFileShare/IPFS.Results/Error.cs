@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
 namespace IPFS.Results
 {
     public class Error
@@ -12,8 +7,8 @@ namespace IPFS.Results
         
         public Error(int code, string message)
         {
-            this.Code = code;
-            this.Message = message;
+            Code = code;
+            Message = message;
         }
     }
 }

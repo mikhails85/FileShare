@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace IPFS.Integration.Utils.Log
 {
     public static class Logger

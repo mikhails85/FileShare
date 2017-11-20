@@ -1,9 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using IPFS.Integration.Utils.Log;
-using Newtonsoft.Json;
 using IPFS.Results;
+using Newtonsoft.Json;
+using System;
+
 namespace IPFS.Client
 {
     public class ClientLogger: ILogger

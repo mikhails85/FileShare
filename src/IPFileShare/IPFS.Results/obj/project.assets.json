@@ -177,28 +177,33 @@
     ]
   },
   "packageFolders": {
-    "/home/ubuntu/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\mikha\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Results/IPFS.Results.csproj",
+      "projectUniqueName": "C:\\MyProjects\\FileShare\\src\\IPFileShare\\IPFS.Results\\IPFS.Results.csproj",
       "projectName": "IPFS.Results",
-      "projectPath": "/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Results/IPFS.Results.csproj",
-      "packagesPath": "/home/ubuntu/.nuget/packages/",
-      "outputPath": "/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Results/obj/",
+      "projectPath": "C:\\MyProjects\\FileShare\\src\\IPFileShare\\IPFS.Results\\IPFS.Results.csproj",
+      "packagesPath": "C:\\Users\\mikha\\.nuget\\packages\\",
+      "outputPath": "C:\\MyProjects\\FileShare\\src\\IPFileShare\\IPFS.Results\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mikha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
