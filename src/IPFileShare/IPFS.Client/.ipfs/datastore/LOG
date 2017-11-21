@@ -1,0 +1,103 @@
+=============== Nov 21, 2017 (UTC) ===============
+15:37:05.695796 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:37:05.695999 db@open opening
+15:37:05.698148 version@stat F·[] S·0B[] Sc·[]
+15:37:05.701143 db@janitor F·2 G·0
+15:37:05.701175 db@open done T·5.163413ms
+15:37:05.796497 db@close closing
+15:37:05.796566 db@close done T·65.695µs
+=============== Nov 21, 2017 (UTC) ===============
+15:37:05.797178 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:37:05.797285 version@stat F·[] S·0B[] Sc·[]
+15:37:05.797292 db@open opening
+15:37:05.797331 journal@recovery F·1
+15:37:05.798396 journal@recovery recovering @1
+15:37:05.801414 memdb@flush created L0@2 N·2 S·211B "/lo..oot,v2":"/lo..ins,v1"
+15:37:05.804585 version@stat F·[1] S·211B[211B] Sc·[0.25]
+15:37:05.805103 db@janitor F·3 G·0
+15:37:05.805134 db@open done T·7.834389ms
+15:37:05.835272 db@close closing
+15:37:05.835370 db@close done T·91.819µs
+=============== Nov 21, 2017 (UTC) ===============
+21:01:10.578645 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:01:10.578937 version@stat F·[1] S·211B[211B] Sc·[0.25]
+21:01:10.578958 db@open opening
+21:01:10.579003 journal@recovery F·1
+21:01:10.580026 journal@recovery recovering @3
+21:01:10.586489 memdb@flush created L0@5 N·4 S·1KiB "/F5..B4L,v6":"/lo..ins,v4"
+21:01:10.588133 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:01:10.589874 db@janitor F·4 G·0
+21:01:10.589908 db@open done T·10.939097ms
+=============== Nov 21, 2017 (UTC) ===============
+21:04:17.641685 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:04:17.644285 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:04:17.644302 db@open opening
+21:04:17.644357 journal@recovery F·1
+21:04:17.645303 journal@recovery recovering @6
+21:04:17.647006 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:04:17.647585 db@janitor F·4 G·0
+21:04:17.647617 db@open done T·3.300966ms
+=============== Nov 21, 2017 (UTC) ===============
+21:12:18.758629 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:12:18.758798 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:12:18.758807 db@open opening
+21:12:18.758861 journal@recovery F·1
+21:12:18.759590 journal@recovery recovering @8
+21:12:18.760934 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:12:18.761691 db@janitor F·4 G·0
+21:12:18.761722 db@open done T·2.905454ms
+=============== Nov 21, 2017 (UTC) ===============
+21:14:24.858018 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:14:24.858213 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:14:24.858225 db@open opening
+21:14:24.858287 journal@recovery F·1
+21:14:24.858751 journal@recovery recovering @10
+21:14:24.859896 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:14:24.860523 db@janitor F·4 G·0
+21:14:24.860552 db@open done T·2.314041ms
+=============== Nov 21, 2017 (UTC) ===============
+21:15:57.323812 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:15:57.324005 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:15:57.324016 db@open opening
+21:15:57.324065 journal@recovery F·1
+21:15:57.325086 journal@recovery recovering @12
+21:15:57.325954 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:15:57.326642 db@janitor F·4 G·0
+21:15:57.326674 db@open done T·2.64821ms
+=============== Nov 21, 2017 (UTC) ===============
+21:27:11.692378 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:27:11.692706 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:27:11.692721 db@open opening
+21:27:11.692794 journal@recovery F·1
+21:27:11.693498 journal@recovery recovering @14
+21:27:11.694863 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:27:11.695629 db@janitor F·4 G·0
+21:27:11.695670 db@open done T·2.936411ms
+=============== Nov 21, 2017 (UTC) ===============
+21:41:08.123305 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:41:08.125372 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:41:08.125391 db@open opening
+21:41:08.125462 journal@recovery F·1
+21:41:08.126208 journal@recovery recovering @16
+21:41:08.136462 memdb@flush created L0@18 N·182 S·23KiB "/pr..VIY,v139":"/pr..M4Q,v80"
+21:41:08.137144 version@stat F·[3] S·24KiB[24KiB] Sc·[0.75]
+21:41:08.138225 db@janitor F·5 G·0
+21:41:08.138271 db@open done T·12.869504ms
+=============== Nov 21, 2017 (UTC) ===============
+22:29:09.330036 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:29:09.330369 version@stat F·[3] S·24KiB[24KiB] Sc·[0.75]
+22:29:09.330381 db@open opening
+22:29:09.330431 journal@recovery F·1
+22:29:09.337146 journal@recovery recovering @19
+22:29:09.338148 version@stat F·[3] S·24KiB[24KiB] Sc·[0.75]
+22:29:09.338601 db@janitor F·5 G·0
+22:29:09.338631 db@open done T·8.238634ms
+=============== Nov 21, 2017 (UTC) ===============
+22:30:36.950411 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:30:36.950567 version@stat F·[3] S·24KiB[24KiB] Sc·[0.75]
+22:30:36.950577 db@open opening
+22:30:36.950629 journal@recovery F·1
+22:30:36.952009 journal@recovery recovering @21
+22:30:36.952653 version@stat F·[3] S·24KiB[24KiB] Sc·[0.75]
+22:30:36.953131 db@janitor F·5 G·0
+22:30:36.953158 db@open done T·2.570905ms
