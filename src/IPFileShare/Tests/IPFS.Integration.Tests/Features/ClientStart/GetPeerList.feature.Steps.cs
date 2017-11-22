@@ -21,7 +21,7 @@ namespace IPFS.Integration.Tests.Features.ClientStart
         
         private void Given_client()
         {
-            client = new RESTClient("http://0.0.0.0:8081/");
+            client = new RESTClient("http://0.0.0.0:7002/");
         }
         
         private async void When_user_send_peer_list_request()
