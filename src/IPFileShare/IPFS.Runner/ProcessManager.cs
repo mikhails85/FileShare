@@ -9,26 +9,23 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 namespace IPFS.Runner
 {
-    //https://blogs.msdn.microsoft.com/fkaduk/2017/02/22/using-strongly-typed-configuration-in-net-core-console-app/
-    //http://www.levibotelho.com/development/async-processes-with-taskcompletionsource/
     public static class ProcessManager
     {
         private static Process process;
-        private static Mutex mutex;
         
         public static Action<VoidResult> OnExit{ get; set; }
         
-        public static async Task<VoidResult> StartProcess(string appId, string path, params string[] options)
+        public static async Task<VoidResult> StartProcess(string appId, ProcessConfig config)
         {   
            var result = new VoidResult();    
-           mutex = new Mutex(false, appId);
-           if (!mutex.WaitOne(TimeSpan.FromSeconds(0), false))
+          
+           if (IsAlreadyRunning(appId))
            {
                result.AddErrors(new ProcessAlreadyRunError());
                return result;
            }
            
-           return await Starting(path, options);
+           return await Starting(config);
         }
         
         public static void StopProcess()
@@ -41,23 +38,27 @@ namespace IPFS.Runner
             process.Kill ();
 		    process.Dispose ();
 			process = null;
-			
-            if(mutex == null)
-            {
-                return;
-            }
-            mutex.Dispose();
-            mutex = null;
         }
         
-        private static Task<VoidResult> Starting(string path, params string[] options)
+        private static bool IsAlreadyRunning(string appId)
+        {
+            bool createdNew;
+
+            var mutex = new Mutex(true, "Global\\"+appId, out createdNew);
+            if (createdNew)
+                mutex.ReleaseMutex();
+
+            return !createdNew;
+        }
+        
+        private static Task<VoidResult> Starting(ProcessConfig config)
         {
             var tcs = new TaskCompletionSource<VoidResult>();
             
             process = new Process
             {
                 EnableRaisingEvents = true,
-                StartInfo = CreateProcessStartInfo(path, options)
+                StartInfo = CreateProcessStartInfo(config)
             };
             
             var c = Console.Out;
@@ -79,7 +80,7 @@ namespace IPFS.Runner
 			    Console.SetOut (c);
 				c.WriteLine(e.Data);
 				
-				if(e.Data.Contains("Daemon is ready"))
+				if(!string.IsNullOrWhiteSpace(config.ReadyAfter) && !string.IsNullOrWhiteSpace(e.Data) && e.Data.Contains(config.ReadyAfter))
 				{
 				    var result = new VoidResult();    
 				    tcs.SetResult(result);
@@ -90,6 +91,12 @@ namespace IPFS.Runner
             
             process.BeginOutputReadLine();
 			process.BeginErrorReadLine();
+			
+			if(string.IsNullOrWhiteSpace(config.ReadyAfter))
+			{
+			    var result = new VoidResult();    
+			    tcs.SetResult(result);
+			}
 			
 			return tcs.Task;
         }
@@ -110,16 +117,15 @@ namespace IPFS.Runner
             {
                 OnExit(exitResult);
             }
-           
-            process.Dispose();
-            process = null;
+            
+            StopProcess();
         }
         
-        private static ProcessStartInfo CreateProcessStartInfo (string path, params string[] options)
+        private static ProcessStartInfo CreateProcessStartInfo (ProcessConfig config)
         {
             var start = new ProcessStartInfo();
-            start.FileName = path;
-            start.Arguments = string.Join(" ", options);
+            start.FileName = config.ExecutorPath;
+            start.Arguments = config.ToString();
             start.UseShellExecute = false;
             start.CreateNoWindow = true;
             start.RedirectStandardOutput = true;

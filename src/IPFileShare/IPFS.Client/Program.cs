@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using IPFS.Runner;
 using IPFS.Results;
+using Microsoft.Extensions.Configuration;
 
 namespace IPFS.Client
 {
@@ -17,12 +18,11 @@ namespace IPFS.Client
         {
             Logger.SetupLogger(new ClientLogger());
             
-            var path = Path.GetFullPath("./.ipfs");
+            var config = GetConfig();
                 
-            Console.WriteLine(path);
+            Console.WriteLine(config);
             
-            var processResult = await ProcessManager.StartProcess("MyClient", 
-                                    "/bin/bash","-c", $"\"IPFS_PATH={path} ipfs daemon\"" );     
+            var processResult = await ProcessManager.StartProcess("MyClient", config);     
             
             if(!processResult.Success)
             {
@@ -40,9 +40,26 @@ namespace IPFS.Client
         
             Console.WriteLine(result.Success ? "Success" : result.Errors[0].Message);
             
+            Console.WriteLine("Ready to Stop");
+            Console.ReadKey();
+            
             ProcessManager.StopProcess();
             
             Console.WriteLine("Done");
+        }
+        
+        private static ProcessConfig GetConfig()
+        {
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddEnvironmentVariables();
+
+            IConfigurationRoot configuration = builder.Build();
+
+            var processConfig = new ProcessConfig();
+            configuration.GetSection("ServiceRunner").Bind(processConfig);
+            return processConfig;
         }
     }
 }
