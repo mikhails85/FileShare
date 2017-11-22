@@ -1,4 +1,4 @@
-<div class='main-nav'>
+<!--<div class='main-nav'>
     <div class='navbar navbar-inverse'>
         <div class='navbar-header'>
             <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
@@ -30,4 +30,38 @@
             </ul>
         </div>
     </div>
+</div>-->
+<header class="logo">
+    <a  class="sidebar-icon" (click)="ManuToggle()"> 
+        <span class="fa fa-bars"></span> 
+    </a>
+    <a [routerLink]="['/home']"> 
+        <span id="logo"> 
+            <h1>Augment</h1>
+        </span> 
+	</a>
+</header>
+<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+<div class="down">	
+    <a [routerLink]="['/home']"><img src="/images/admin.jpg"></a>
+    <a [routerLink]="['/home']"><span class=" name-caret">Jasmin Leo</span></a>
+    <p>System Administrator in Company</p>
+    <ul>
+        <li>
+            <a class="tooltips" [routerLink]="['/home']"><span>Profile</span><i class="lnr lnr-user"></i></a>
+        </li>
+        <li>
+            <a class="tooltips" [routerLink]="['/home']"><span>Settings</span><i class="lnr lnr-cog"></i></a>
+        </li>
+        <li>
+            <a class="tooltips" [routerLink]="['/home']"><span>Log out</span><i class="lnr lnr-power-switch"></i></a>
+        </li>
+    </ul>
 </div>
+<div class="menu">
+    <ul id="menu" >
+        <li><a [routerLink]="['/home']"><i class="fa fa-tachometer"></i> <span [ngStyle] = "toggle && {'position':'absolute'}">Dashboard</span></a></li>
+        <li><a [routerLink]="['/counter']"><i class="fa fa-file-text-o"></i> <span [ngStyle] = "toggle && {'position':'absolute'}">Dashboard</span></a></li>
+        <li><a [routerLink]="['/fetch-data']"><i class="lnr lnr-layers"></i> <span [ngStyle] = "toggle && {'position':'absolute'}">Dashboard</span></a></li>
+    </ul>    
+</div>    

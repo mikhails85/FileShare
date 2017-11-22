@@ -1534,6 +1534,12 @@
       "from": "ieee754@>=1.1.4 <2.0.0",
       "resolved": "https://registry.npmjs.org/ieee754/-/ieee754-1.1.8.tgz"
     },
+    "ignore-loader": {
+      "version": "0.1.2",
+      "from": "ignore-loader@latest",
+      "resolved": "https://registry.npmjs.org/ignore-loader/-/ignore-loader-0.1.2.tgz",
+      "dev": true
+    },
     "indexes-of": {
       "version": "1.0.1",
       "from": "indexes-of@>=1.0.1 <2.0.0",
