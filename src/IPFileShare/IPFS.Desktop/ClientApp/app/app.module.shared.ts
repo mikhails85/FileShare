@@ -30,6 +30,7 @@ import { CounterComponent } from './components/counter/counter.component';
             { path: '**', redirectTo: 'home' }
         ])
     ]
+    
 })
 export class AppModuleShared {
 }

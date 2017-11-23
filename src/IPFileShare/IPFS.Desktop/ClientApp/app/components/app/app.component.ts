@@ -1,15 +1,10 @@
 import { Component } from '@angular/core';
+import { ViewService } from './../../services/view.service';
 
 @Component({
     selector: 'app',
-    templateUrl: './app.component.html',
-    //styleUrls: ['./app.component.css']
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
-    public toggle : boolean = false;
-
-    public onManuToggle = ($event: boolean) => {
-       
-        this.toggle = $event;
-    }
+    constructor(public view: ViewService) { }
 }

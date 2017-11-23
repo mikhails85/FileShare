@@ -1,38 +1,5 @@
-<!--<div class='main-nav'>
-    <div class='navbar navbar-inverse'>
-        <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </button>
-            <a class='navbar-brand' [routerLink]="['/home']">IPFS_Desktop</a>
-        </div>
-        <div class='clearfix'></div>
-        <div class='navbar-collapse collapse'>
-            <ul class='nav navbar-nav'>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/home']">
-                        <span class='glyphicon glyphicon-home'></span> Home
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">
-                        <span class='glyphicon glyphicon-education'></span> Counter
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>-->
 <header class="logo">
-    <a  class="sidebar-icon" (click)="ManuToggle()"> 
+    <a  class="sidebar-icon" (click)="view.manuToggle()"> 
         <span class="fa fa-bars"></span> 
     </a>
     <a [routerLink]="['/home']"> 
@@ -60,8 +27,8 @@
 </div>
 <div class="menu">
     <ul id="menu" >
-        <li><a [routerLink]="['/home']"><i class="fa fa-tachometer"></i> <span [ngStyle] = "toggle && {'position':'absolute'}">Dashboard</span></a></li>
-        <li><a [routerLink]="['/counter']"><i class="fa fa-file-text-o"></i> <span [ngStyle] = "toggle && {'position':'absolute'}">Dashboard</span></a></li>
-        <li><a [routerLink]="['/fetch-data']"><i class="lnr lnr-layers"></i> <span [ngStyle] = "toggle && {'position':'absolute'}">Dashboard</span></a></li>
+        <li><a [routerLink]="['/home']"><i class="fa fa-tachometer"></i> <span [ngStyle] = "view.manuToggleState && {'position':'absolute'}">Dashboard</span></a></li>
+        <li><a [routerLink]="['/counter']"><i class="fa fa-file-text-o"></i> <span [ngStyle] = "view.manuToggleState && {'position':'absolute'}">Counter</span></a></li>
+        <li><a [routerLink]="['/fetch-data']"><i class="lnr lnr-layers"></i> <span [ngStyle] = "view.manuToggleState && {'position':'absolute'}">Fetch data</span></a></li>
     </ul>    
 </div>    

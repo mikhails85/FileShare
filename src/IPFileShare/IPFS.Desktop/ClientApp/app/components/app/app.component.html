@@ -1,15 +1,4 @@
-<!--<div class='container-fluid'>
-    <div class='row'>
-        <div class='col-sm-3'>
-            <nav-menu></nav-menu>
-        </div>
-        <div class='col-sm-9 body-content'>
-            <router-outlet></router-outlet>
-        </div>
-    </div>
-</div>-->
-
-<div class="page-container" [ngClass]="{'sidebar-collapsed': toggle, 'sidebar-collapsed-back': !toggle}">
+<div class="page-container" [ngClass]="{'sidebar-collapsed': view.manuToggleState, 'sidebar-collapsed-back': !view.manuToggleState}">
     <div class="left-content">
         <div class="inner-content">
             <div class="header-section">
@@ -182,7 +171,7 @@
         </div>
     </div>
     <div class="sidebar-menu">
-        <nav-menu (onManuToggle)="onManuToggle($event)"></nav-menu>
+        <nav-menu></nav-menu>
     </div>
     <div class="clearfix"></div>
 </div>
