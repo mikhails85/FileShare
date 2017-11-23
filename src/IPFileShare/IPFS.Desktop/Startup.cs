@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using IPFS.Runner;
+using IPFS.Results;
 
 namespace IPFS_Desktop
 {
@@ -15,6 +17,7 @@ namespace IPFS_Desktop
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            StartProcess();
         }
 
         public IConfiguration Configuration { get; }
@@ -26,7 +29,7 @@ namespace IPFS_Desktop
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime applicationLifetime)
         {
             if (env.IsDevelopment())
             {
@@ -53,6 +56,24 @@ namespace IPFS_Desktop
                     name: "spa-fallback",
                     defaults: new { controller = "Home", action = "Index" });
             });
+            
+            applicationLifetime.ApplicationStopping.Register(StopProcess);
+        }
+        
+        private void StartProcess()
+        {
+            var processConfig = new ProcessConfig();
+            Configuration.GetSection("ServiceRunner").Bind(processConfig);
+            var processResult = ProcessManager.StartProcess("DesktopClient", processConfig).Result;     
+            if(!processResult.Success)
+            {
+                throw new Exception(processResult.Errors[0].Message);
+            }
+        }
+        
+        private void StopProcess()
+        {
+            ProcessManager.StopProcess();
         }
     }
 }
