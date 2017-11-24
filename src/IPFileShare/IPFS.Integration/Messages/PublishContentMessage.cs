@@ -1,5 +1,6 @@
 using IPFS.Integration.Models;
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
@@ -8,9 +9,14 @@ namespace IPFS.Integration.Messages
 {
     public class PublishContentMessage: IApiMessage
     {
-        public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<PublishContentMessage>();
+        private readonly ILogger<PublishContentMessage> Log;
+        
+        public PublishContentMessage(ILogger<PublishContentMessage> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<IPFSHash>> SendAsync(string hash)
         {

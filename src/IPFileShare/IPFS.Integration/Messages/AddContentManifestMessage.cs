@@ -1,5 +1,6 @@
 using IPFS.Integration.Models;
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using Newtonsoft.Json;
 using System.IO;
@@ -10,9 +11,14 @@ namespace IPFS.Integration.Messages
 {
     public class AddContentManifestMessage : IApiMessage
     {
-        public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<AddContentManifestMessage>();
+        private readonly ILogger<AddContentManifestMessage> Log;
+        
+        public AddContentManifestMessage(ILogger<AddContentManifestMessage> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<IPFSHash>> SendAsync(ContentManifest manifest)
         {

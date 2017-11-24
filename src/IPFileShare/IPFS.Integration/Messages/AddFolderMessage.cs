@@ -1,5 +1,6 @@
 using IPFS.Integration.Models;
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using System.IO;
 using System.Linq;
@@ -9,9 +10,14 @@ namespace IPFS.Integration.Messages
 {
     public class AddFolderMessage : IApiMessage
     {
-        public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<AddFolderMessage>();
+        private readonly ILogger<AddFolderMessage> Log;
+        
+        public AddFolderMessage(ILogger<AddFolderMessage> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<IPFSHash>> SendAsync(string path, bool recursive = true)
         {

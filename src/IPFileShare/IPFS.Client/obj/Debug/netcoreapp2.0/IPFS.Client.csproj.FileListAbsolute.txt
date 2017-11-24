@@ -29,3 +29,5 @@ C:/MyProjects/FileShare/src/IPFileShare/IPFS.Client/obj/Debug/netcoreapp2.0/IPFS
 C:/MyProjects/FileShare/src/IPFileShare/IPFS.Client/obj/Debug/netcoreapp2.0/IPFS.Client.pdb
 /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Runner.dll
 /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Runner.pdb
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Utils.dll
+/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Client/bin/Debug/netcoreapp2.0/IPFS.Utils.pdb

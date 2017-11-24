@@ -1,7 +1,9 @@
+using IPFS.Integration.Abstractions;
+
 namespace IPFS.Integration.Messages
 {
     public interface IApiMessage
     {
-        RESTClient Client {get; set;}
+        IIPFSClient Client {get; set;}
     }
 }

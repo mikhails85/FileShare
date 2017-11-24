@@ -1,5 +1,6 @@
 using IPFS.Integration.Models;
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
@@ -8,9 +9,14 @@ namespace IPFS.Integration.Messages
 {
     public class GetPeerInformation: IApiMessage
     {
-        public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<GetPeerInformation>();
+        private readonly ILogger<GetPeerInformation> Log;
+        
+        public GetPeerInformation(ILogger<GetPeerInformation> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<PeerInfo>> SendAsync(string hash = "")
         {

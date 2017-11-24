@@ -1,4 +1,6 @@
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Models;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using System.IO;
 using System.Threading.Tasks;
@@ -7,9 +9,14 @@ namespace IPFS.Integration.Messages
 {
     public class ReadTextMessage : IApiMessage
     {
-        public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<ReadTextMessage>();
+        private readonly ILogger<ReadTextMessage> Log;
+        
+        public ReadTextMessage(ILogger<ReadTextMessage> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<string>> SendAsync(string path)
         {

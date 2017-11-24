@@ -1,5 +1,6 @@
 using IPFS.Integration.Models;
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
@@ -8,9 +9,14 @@ namespace IPFS.Integration.Messages
 {
     public class AddIPFSObjectMessage: IApiMessage
     {
-        public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<AddIPFSObjectMessage>();
+        private readonly ILogger<AddIPFSObjectMessage> Log;
+        
+        public AddIPFSObjectMessage(ILogger<AddIPFSObjectMessage> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<IPFSObject>> SendAsync()
         {

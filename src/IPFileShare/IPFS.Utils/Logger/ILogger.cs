@@ -1,10 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using IPFS.Results;
-
-namespace IPFS.Integration.Utils.Log
+namespace IPFS.Utils.Logger
 {
-    public interface ILogger
+    public interface ILogger<TContext>
     {
-        string Context { get; set;}
+        string Context { get;}
         void Error(Error error, string message);
         void Result<T> (Result<T> result, string message);
         void Result (VoidResult result, string message);

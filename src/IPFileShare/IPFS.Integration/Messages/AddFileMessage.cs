@@ -1,5 +1,6 @@
 using IPFS.Integration.Models;
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using Newtonsoft.Json;
 using System.IO;
@@ -9,9 +10,14 @@ namespace IPFS.Integration.Messages
 {
     public class AddFileMessage : IApiMessage
     {
-        public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<AddFileMessage>();
+        private readonly ILogger<AddFileMessage> Log;
+        
+        public AddFileMessage(ILogger<AddFileMessage> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<IPFSHash>> SendAsync(string path)
         {

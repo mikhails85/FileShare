@@ -1,5 +1,6 @@
 using IPFS.Integration.Models;
-using IPFS.Integration.Utils.Log;
+using IPFS.Integration.Abstractions;
+using IPFS.Utils.Logger;
 using IPFS.Results;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
@@ -10,9 +11,14 @@ namespace IPFS.Integration.Messages
 {
     public class GetLocalObjectListMessage: IApiMessage
     {
-         public RESTClient Client { get; set;}
+        public IIPFSClient Client { get; set;}
         
-        private ILogger Log => Logger.Log<GetLocalObjectListMessage>();
+        private readonly ILogger<GetLocalObjectListMessage> Log;
+        
+        public GetLocalObjectListMessage(ILogger<GetLocalObjectListMessage> logger)
+        {
+            this.Log = logger;
+        }
         
         public async Task<Result<List<IPFSObjectInfo>>> SendAsync()
         {

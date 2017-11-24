@@ -8,25 +8,28 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using IPFS.Integration.Abstractions;
 
 namespace IPFS.Integration
 {
-    public class RESTClient
+    public class RESTClient : IIPFSClient
     {
         public Uri GatewayUrl {get;}
         
-        public RESTClient(string gatewayUrl)
+        private readonly IMessageProvider messageProvider; 
+        
+        public RESTClient(string gatewayUrl, IMessageProvider messageProvider)
         {
             var url = new Uri(gatewayUrl);
-            GatewayUrl = new Uri(url, "api/v0/");            
+            GatewayUrl = new Uri(url, "api/v0/");  
+            
+            this.messageProvider = messageProvider;
         }
         
-        public T Message<T>() where T : IApiMessage, new()
+        public T Message<T>() where T : IApiMessage
         {
-            var request = new T
-            {
-                Client = this
-            };
+            var request = this.messageProvider.Message<T>();
+            request.Client = this;
             return request; 
         }
         
