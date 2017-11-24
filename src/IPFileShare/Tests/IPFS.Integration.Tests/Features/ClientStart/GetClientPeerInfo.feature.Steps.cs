@@ -1,25 +1,26 @@
 using IPFS.Integration.Messages;
 using IPFS.Integration.Models;
 using IPFS.Integration.Tests.Helpers;
-using IPFS.Integration.Utils.Log;
 using IPFS.Results;
 using LightBDD.Framework;
 using LightBDD.Framework.Commenting;
 using LightBDD.XUnit2;
 using Xunit;
 using Xunit.Abstractions;
+using IPFS.Integration.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace IPFS.Integration.Tests.Features.ClientStart
 {
     public partial class GetClientPeerInfo: FeatureFixture
     {
-        private RESTClient client;
+        private IIPFSClient client;
         
         private Result<PeerInfo> result; 
         
         private void Given_client()
         {
-            client = new RESTClient("http://0.0.0.0:7002/");
+            client = ServiceRunnerFixture.ServiceProvider.GetService<IIPFSClient>();
         }
         
         private async void When_user_send_peer_info_request()
@@ -36,7 +37,6 @@ namespace IPFS.Integration.Tests.Features.ClientStart
        
         public GetClientPeerInfo(ITestOutputHelper output):base(output)
         {
-            Logger.SetupLogger(new DummyLogger());
         }
     }
 }

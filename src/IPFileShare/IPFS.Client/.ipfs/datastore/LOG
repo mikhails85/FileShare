@@ -252,3 +252,12 @@
 16:33:10.016723 version@stat F·[2 1] S·50KiB[1KiB 48KiB] Sc·[0.50 0.00]
 16:33:10.017518 db@janitor F·5 G·0
 16:33:10.017553 db@open done T·12.507056ms
+=============== Nov 24, 2017 (UTC) ===============
+16:41:42.835699 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:41:42.835915 version@stat F·[2 1] S·50KiB[1KiB 48KiB] Sc·[0.50 0.00]
+16:41:42.835932 db@open opening
+16:41:42.836001 journal@recovery F·1
+16:41:42.837447 journal@recovery recovering @59
+16:41:42.840392 version@stat F·[2 1] S·50KiB[1KiB 48KiB] Sc·[0.50 0.00]
+16:41:42.841055 db@janitor F·5 G·0
+16:41:42.841091 db@open done T·5.143341ms
