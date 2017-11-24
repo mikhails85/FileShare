@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using IPFS.Utils.Logger;
 using IPFS.Results;
 using Newtonsoft.Json;
+using System;
 namespace IPFS.Utils.Logger.Implementation
 {
     public class SeriLogger<TContext>: ILogger<TContext>

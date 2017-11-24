@@ -1,12 +1,10 @@
-using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
 using IPFS.Results;
 using IPFS.Runner.Errors;
+using System;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Diagnostics;
+
 namespace IPFS.Runner
 {
     public static class ProcessManager
@@ -42,9 +40,7 @@ namespace IPFS.Runner
         
         private static bool IsAlreadyRunning(string appId)
         {
-            bool createdNew;
-
-            var mutex = new Mutex(true, "Global\\"+appId, out createdNew);
+            var mutex = new Mutex(true, "Global\\" + appId, out bool createdNew);
             if (createdNew)
                 mutex.ReleaseMutex();
 
@@ -112,25 +108,24 @@ namespace IPFS.Runner
                 exitResult.AddErrors(new ProcessExitedWithError("The process did not exit correctly. " +
                     "The corresponding error message was: " + errorMessage));    
             }
-                
-            if(OnExit != null)
-            {
-                OnExit(exitResult);
-            }
-            
+
+            OnExit?.Invoke(exitResult);
+
             StopProcess();
         }
         
         private static ProcessStartInfo CreateProcessStartInfo (ProcessConfig config)
         {
-            var start = new ProcessStartInfo();
-            start.FileName = config.ExecutorPath;
-            start.Arguments = config.ToString();
-            start.UseShellExecute = false;
-            start.CreateNoWindow = true;
-            start.RedirectStandardOutput = true;
-            start.RedirectStandardError = true;
-            
+            var start = new ProcessStartInfo
+            {
+                FileName = config.ExecutorPath,
+                Arguments = config.ToString(),
+                UseShellExecute = false,
+                CreateNoWindow = true,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true
+            };
+
             return start;
         }
         

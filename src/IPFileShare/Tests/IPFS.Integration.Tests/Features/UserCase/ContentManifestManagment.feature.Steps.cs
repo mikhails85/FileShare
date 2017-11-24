@@ -1,15 +1,11 @@
 using IPFS.Integration.Messages;
 using IPFS.Integration.Models;
-using IPFS.Integration.Tests.Helpers;
 using IPFS.Results;
-using LightBDD.XUnit2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
-using IPFS.Integration.Abstractions;
-using IPFS.Integration.Tests.Features;
 
 namespace IPFS.Integration.Tests.Features.UserCase
 {

@@ -1,16 +1,14 @@
 using IPFS.Integration;
+using IPFS.Integration.Abstractions;
 using IPFS.Integration.Messages;
+using IPFS.Runner;
+using IPFS.Utils.DI;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Serilog;
 using System;
 using System.IO;
 using System.Threading.Tasks;
-using System.Threading;
-using IPFS.Runner;
-using IPFS.Results;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using IPFS.Integration.Abstractions;
-using Serilog;
-using IPFS.Utils.DI;
 
 namespace IPFS.Client
 {
