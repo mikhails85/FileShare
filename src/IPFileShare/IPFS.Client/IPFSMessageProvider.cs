@@ -1,5 +1,7 @@
 using IPFS.Integration.Abstractions;
 using IPFS.Integration.Messages;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace IPFS.Client
 {

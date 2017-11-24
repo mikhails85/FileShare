@@ -19,7 +19,7 @@ namespace IPFS.Desktop.DependencyInjection
             services.AddSingleton<Serilog.ILogger>((ctx)=>{
                 return new Serilog.LoggerConfiguration()
                             .MinimumLevel.Debug()
-                            .WriteTo.File("app-log.txt", 
+                            .WriteTo.File(@".\Logs\app-log.txt", 
                                   rollingInterval: RollingInterval.Day, 
                                   outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{u3}] {Message:lj}{NewLine}{Exception}")
                             .CreateLogger();
