@@ -11,6 +11,7 @@
           "IPFS.Integration": "1.0.0",
           "IPFS.Results": "1.0.0",
           "IPFS.Runner": "1.0.0",
+          "IPFS.Utils": "1.0.0",
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Configuration.Binder": "2.0.0",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.0.0",

@@ -69,3 +69,13 @@
 11:30:10.674140 table@remove removed @5
 11:30:10.674186 table@remove removed @2
 11:30:10.674246 table@remove removed @11
+=============== Nov 24, 2017 (UTC) ===============
+22:19:27.489083 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:19:27.489306 version@stat F·[0 1] S·380KiB[0B 380KiB] Sc·[0.00 0.00]
+22:19:27.489321 db@open opening
+22:19:27.489371 journal@recovery F·1
+22:19:27.490384 journal@recovery recovering @15
+22:19:27.503774 memdb@flush created L0@18 N·1322 S·164KiB "/F5..X6T,v4274":"/pr..FJI,v3513"
+22:19:27.504806 version@stat F·[1 1] S·545KiB[164KiB 380KiB] Sc·[0.25 0.00]
+22:19:27.505757 db@janitor F·4 G·0
+22:19:27.505815 db@open done T·16.455427ms

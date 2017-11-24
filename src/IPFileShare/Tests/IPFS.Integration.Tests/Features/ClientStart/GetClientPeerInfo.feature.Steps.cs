@@ -8,20 +8,14 @@ using LightBDD.XUnit2;
 using Xunit;
 using Xunit.Abstractions;
 using IPFS.Integration.Abstractions;
-using Microsoft.Extensions.DependencyInjection;
+using IPFS.Integration.Tests.Features;
 
 namespace IPFS.Integration.Tests.Features.ClientStart
 {
-    public partial class GetClientPeerInfo: FeatureFixture
+    public partial class GetClientPeerInfo: BaseFeature
     {
-        private IIPFSClient client;
-        
+       
         private Result<PeerInfo> result; 
-        
-        private void Given_client()
-        {
-            client = ServiceRunnerFixture.ServiceProvider.GetService<IIPFSClient>();
-        }
         
         private async void When_user_send_peer_info_request()
         {

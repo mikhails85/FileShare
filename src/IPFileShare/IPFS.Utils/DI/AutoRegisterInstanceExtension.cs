@@ -20,5 +20,18 @@ namespace IPFS.Utils.DI
             
             return serviceCollection;
         }
+        
+        public static IServiceCollection AutoRegisterInjectable(this IServiceCollection serviceCollection)
+        {
+            var types = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(s => s.GetTypes())
+                .Where(p => p.IsDefined(typeof(InjectableAttribute),true) && !p.IsAbstract);
+            foreach(var item in types)    
+            {
+                serviceCollection.AddTransient(item);
+            }
+            
+            return serviceCollection;
+        }
     }
 }

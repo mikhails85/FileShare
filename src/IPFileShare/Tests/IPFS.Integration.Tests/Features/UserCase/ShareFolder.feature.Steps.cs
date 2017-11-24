@@ -8,20 +8,14 @@ using LightBDD.XUnit2;
 using Xunit;
 using Xunit.Abstractions;
 using IPFS.Integration.Abstractions;
-using Microsoft.Extensions.DependencyInjection;
+using IPFS.Integration.Tests.Features;
 
 namespace IPFS.Integration.Tests.Features.UserCase
 {
-    public partial class ShareFolder: FeatureFixture
+    public partial class ShareFolder: BaseFeature
     {
-        private IIPFSClient client;
         
         private Result<IPFSHash> result; 
-        
-        private void Given_client()
-        {
-            client = ServiceRunnerFixture.ServiceProvider.GetService<IIPFSClient>();
-        }
         
         private async void When_user_share_folder()
         {

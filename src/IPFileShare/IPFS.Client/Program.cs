@@ -18,17 +18,19 @@ namespace IPFS.Client
     {
         private static IServiceProvider serviceProvider;
         private static IConfigurationRoot configuration;
+        private static ProcessConfig processConfig;
         
         [STAThread]
         static async Task Main(string[] args)
         {
-            SetupConfiguration();
             
-            var config = GetConfig();
+            SetupConfig();
                 
-            Console.WriteLine(config);
+            SetupDI();
             
-            var processResult = await ProcessManager.StartProcess("MyClient", config);     
+            Console.WriteLine(processConfig);
+            
+            var processResult = await ProcessManager.StartProcess("MyClient", processConfig);     
             
             if(!processResult.Success)
             {
@@ -54,14 +56,20 @@ namespace IPFS.Client
             Console.WriteLine("Done");
         }
         
-        private static ProcessConfig GetConfig()
+        private static void SetupConfig()
         {
-            var processConfig = new ProcessConfig();
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddEnvironmentVariables();
+
+            configuration = builder.Build();
+            
+            processConfig = new ProcessConfig();
             configuration.GetSection("ServiceRunner").Bind(processConfig);
-            return processConfig;
         }
         
-        private static void SetupConfiguration()
+        private static void SetupDI()
         {
             serviceProvider = new ServiceCollection()
             .AddSingleton<Serilog.ILogger>((ctx)=>{
@@ -76,17 +84,10 @@ namespace IPFS.Client
             {
                 var messageProvider = ctx.GetService<IMessageProvider>();
                 
-                return new RESTClient("http://0.0.0.0:6001/", messageProvider);
+                return new RESTClient(processConfig.API, messageProvider);
             })
             .AutoRegisterInstanceOf<IApiMessage>()
             .BuildServiceProvider();    
-            
-             var builder = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .AddEnvironmentVariables();
-
-            configuration = builder.Build();
         }
     }
 }

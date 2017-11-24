@@ -7,6 +7,8 @@ namespace IPFS.Runner
 {
     public class ProcessConfig
     {
+        public string API {get; set;}
+        
         public string ExecutorPath {get; set;}
         
         public string ReadyAfter {get; set;}

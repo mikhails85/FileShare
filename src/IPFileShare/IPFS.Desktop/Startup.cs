@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using IPFS.Runner;
 using IPFS.Results;
+using IPFS.Desktop.DependencyInjection;
 
 namespace IPFS_Desktop
 {

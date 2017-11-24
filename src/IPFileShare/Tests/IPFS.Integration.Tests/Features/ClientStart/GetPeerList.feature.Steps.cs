@@ -10,20 +10,14 @@ using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
 using IPFS.Integration.Abstractions;
-using Microsoft.Extensions.DependencyInjection;
+using IPFS.Integration.Tests.Features;
 
 namespace IPFS.Integration.Tests.Features.ClientStart
 {
-    public partial class GetPeerList: FeatureFixture
+    public partial class GetPeerList: BaseFeature
     {
-        private IIPFSClient client;
         
         private Result<List<LatencyPeer>> result; 
-        
-        private void Given_client()
-        {
-            client = ServiceRunnerFixture.ServiceProvider.GetService<IIPFSClient>();
-        }
         
         private async void When_user_send_peer_list_request()
         {
