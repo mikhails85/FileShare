@@ -14,7 +14,7 @@ namespace IPFS_Desktop
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
                 .Enrich.FromLogContext()
-                .WriteTo.File(@".\Logs\sys-log.txt", 
+                .WriteTo.File(@"Logs/sys-log.txt", 
                                   rollingInterval: RollingInterval.Day, 
                                   outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{u3}] {Message:lj}{NewLine}{Exception}")
                 .CreateLogger();
