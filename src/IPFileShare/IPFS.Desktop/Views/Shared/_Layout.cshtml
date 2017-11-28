@@ -2,59 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - IPFS_Desktop</title>
+    <title>@ViewData["Title"] - IPFS_Web</title>
     <base href="~/" />
+
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
-    <link href="~/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-    <link href="~/css/style.css" rel='stylesheet' type='text/css' />
-    <link href="~/css/font-awesome.css" rel="stylesheet"> 
-    <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="~/css/icon-font.min.css" type='text/css' />
-    <link href="~/css/barChart.css" rel='stylesheet' type='text/css' />
-    <link href="~/css/fabochart.css" rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="~/css/vroom.css">
-    
-    @RenderSection("styles", required: false)
 </head>
 <body>
     @RenderBody()
 
-    <script src="~/js/jquery-1.10.2.min.js"></script>
-    <script src="~/js/amcharts.js"></script>	
-    <script src="~/js/serial.js"></script>	
-    <script src="~/js/light.js"></script>	
-    <script src="~/js/radar.js"></script>	
-    <script src="~/js/css3clock.js"></script>
-    <script src="~/js/skycons.js"></script>
-    <script src="~/js/jquery.easydropdown.js"></script>
-    <script type="text/javascript" src="~/js/vroom.js"></script>
-    <script type="text/javascript" src="~/js/TweenLite.min.js"></script>
-    <script type="text/javascript" src="~/js/CSSPlugin.min.js"></script>
-    <script src="~/js/jquery.nicescroll.js"></script>
-    <script src="~/js/scripts.js"></script>
-    <script src="~/js/bootstrap.min.js"></script>
-    
-    <!--<script>
-        $(document).ready(function() {
-    		var toggle = true;
-    		$(document).on("click",".sidebar-icon",function() {                
-        	   if (toggle){
-        			$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-        			$("#menu span").css({"position":"absolute"});
-        	   }
-        	   else {
-        			$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-        			setTimeout(function() {
-        			  $("#menu span").css({"position":"relative"});
-        			}, 400);
-        		}
-    			toggle = !toggle;
-    		});
-        });
-	</script>-->
-    
     @RenderSection("scripts", required: false)
 </body>
 </html>

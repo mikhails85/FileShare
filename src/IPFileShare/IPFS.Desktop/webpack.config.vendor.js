@@ -49,6 +49,34 @@ module.exports = (env) => {
         ]
     };
 
+    const styleBundleConfig = merge(sharedConfig, {
+          entry: { 'style': './wwwroot/scss/style.scss' },
+          output: {
+            filename:  'wwwroot/dist/bundle.js',
+          },
+          module: {
+        
+            rules: [
+              { // regular css files
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract({
+                  loader: 'css-loader?importLoaders=1',
+                }),
+              },
+              { // sass / scss loader for webpack
+                test: /\.(sass|scss)$/,
+                loader: ExtractTextPlugin.extract([isDevBuild ? 'css-loader' : 'css-loader?minimize', 'sass-loader'])
+              }
+            ]
+          },
+          plugins: [
+            new ExtractTextPlugin({ // define where to save the file
+              filename: 'wwwroot/dist/[name].bundle.css',
+              allChunks: true,
+            }),
+          ],
+        });
+    
     const clientBundleConfig = merge(sharedConfig, {
         entry: {
             // To keep development builds fast, include all vendor dependencies in the vendor bundle.
@@ -58,7 +86,8 @@ module.exports = (env) => {
         output: { path: path.join(__dirname, 'wwwroot', 'dist') },
         module: {
             rules: [
-                { test: /\.css(\?|$)/, use: extractCSS.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) }
+                { test: /\.css(\?|$)/, use: extractCSS.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) },
+                { test: /\.scss$/, use: [{ loader: isDevBuild ? 'css-loader' : 'css-loader?minimize'}, {loader: "sass-loader" }] }
             ]
         },
         plugins: [
@@ -71,7 +100,6 @@ module.exports = (env) => {
             new webpack.optimize.UglifyJsPlugin()
         ])
     });
-
     const serverBundleConfig = merge(sharedConfig, {
         target: 'node',
         resolve: { mainFields: ['main'] },
@@ -81,7 +109,9 @@ module.exports = (env) => {
             libraryTarget: 'commonjs2',
         },
         module: {
-            rules: [ { test: /\.css(\?|$)/, use: ['to-string-loader', isDevBuild ? 'css-loader' : 'css-loader?minimize' ] } ]
+            rules: [ { test: /\.css(\?|$)/, use: ['to-string-loader', isDevBuild ? 'css-loader' : 'css-loader?minimize' ] },
+                     { test: /\.scss$/, use: [{loader: 'to-string-loader'}, { loader: "css-loader"}, {loader: "sass-loader" }] }
+            ]
         },
         plugins: [
             new webpack.DllPlugin({
@@ -91,5 +121,5 @@ module.exports = (env) => {
         ]
     });
 
-    return [clientBundleConfig, serverBundleConfig];
+    return [clientBundleConfig, serverBundleConfig, styleBundleConfig];
 }
