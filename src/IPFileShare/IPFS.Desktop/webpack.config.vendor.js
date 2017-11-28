@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const merge = require('webpack-merge');
+
 const treeShakableModules = [
     '@angular/animations',
     '@angular/common',
@@ -15,12 +16,15 @@ const treeShakableModules = [
     'zone.js',
 ];
 const nonTreeShakableModules = [
+    'jquery',
     'bootstrap',
-    'bootstrap/dist/css/bootstrap.css',
+    'font-awesome/css/font-awesome.css',
+    'simple-line-icons/css/simple-line-icons.css',
     'es6-promise',
     'es6-shim',
     'event-source-polyfill',
-    'jquery',
+    'chart.js/dist/Chart.bundle.min.js',
+    'chart.js/dist/Chart.min.js'
 ];
 const allModules = treeShakableModules.concat(nonTreeShakableModules);
 
@@ -32,7 +36,14 @@ module.exports = (env) => {
         resolve: { extensions: [ '.js' ] },
         module: {
             rules: [
-                { test: /\.(png|woff|woff2|eot|ttf|svg)(\?|$)/, use: 'ignore-loader' }
+                { test: /\.(png|ttf|eot|woff|woff2|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                  loader: 'file-loader',
+                  options: {
+                      name: '[name].[ext]',
+                      outputPath: 'fonts/',    // where the fonts will go
+                      publicPath: '../dist/'       // override the default path
+                  } 
+                }
             ]
         },
         output: {
@@ -41,7 +52,8 @@ module.exports = (env) => {
             library: '[name]_[hash]'
         },
         plugins: [
-            new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
+            new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery',  'window.jQuery': 'jquery',
+                                    Popper: ['popper.js', 'default'] }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
             new webpack.ContextReplacementPlugin(/\@angular\b.*\b(bundles|linker)/, path.join(__dirname, './ClientApp')), // Workaround for https://github.com/angular/angular/issues/11580
             //new webpack.ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)@angular/, path.join(__dirname, './ClientApp')), // Workaround for https://github.com/angular/angular/issues/14898
             new webpack.ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)(@angular|esm5)/, path.join(__dirname, './ClientApp')),

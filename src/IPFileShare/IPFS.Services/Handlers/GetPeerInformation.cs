@@ -5,26 +5,28 @@ using IPFS.Utils.Logger;
 using IPFS.Services.Context;
 using IPFS.Results;
 using System.Threading.Tasks;
-using IPFS.Integration.Message;
+using IPFS.Integration.Messages;
+using IPFS.Integration.Abstractions;
+using IPFS.Services.DTO;
 
 namespace IPFS.Services.Handlers
 {
-    public class GetPeerInformation
+    public class GetClientInformation
     {
-        private readonly HandlerContext context;
+        private readonly IIPFSClient client;
         private readonly ILogger<GetPeerInformation> logger;
         
-        public GetPeerInformation(HandlerContext context, ILogger<GetPeerInformation> logger)
+        public GetClientInformation(IIPFSClient client, ILogger<GetPeerInformation> logger)
         {
-            this.context = context;
+            this.client = client;
             this.logger = logger;
         }
         
-        public async Task<Result<ClientInfoDTO>> GetClientInfo()
+        public async Task<Result<ClientInfoDTO>> Get()
         {
             var result = new Result<ClientInfoDTO>();
             
-            var messageResult = await context.Client.Message<GetPeerInformation>().SendAsync();
+            var messageResult = await client.Message<GetPeerInformation>().SendAsync();
             
             logger.Result(messageResult, "Get peer info response");
             
@@ -35,7 +37,7 @@ namespace IPFS.Services.Handlers
                 return result;
             }
             
-            
+            return result;
         }
     }
 }

@@ -1,23 +1,17 @@
-<div class="page-container" [ngClass]="{'sidebar-collapsed': view.manuToggleState, 'sidebar-collapsed-back': !view.manuToggleState}">
-    <div class="left-content">
-        <div class="inner-content">
-            <div class="header-section">
-                <div class="top_menu">
-                    <div class="col-md-12 text-center"><h3>{{view.pageTitle}}</h3></div>
-                    
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="outter-wp">
-                <router-outlet></router-outlet>
-            </div>
-            <footer>
-                <p>&copy 2016 Augment . All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">W3layouts.</a></p>
-            </footer>
-        </div>
-    </div>
-    <div class="sidebar-menu">
-        <nav-menu></nav-menu>
-    </div>
-    <div class="clearfix"></div>
+
+<app-header></app-header>
+<div class="app-body">
+  <app-sidebar></app-sidebar>
+  <!-- Main content -->
+  <main class="main">
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <app-breadcrumbs></app-breadcrumbs>
+    </ol>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div><!-- /.conainer-fluid -->
+  </main>
+  <app-aside></app-aside>
 </div>
+<app-footer></app-footer>
