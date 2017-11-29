@@ -38,7 +38,7 @@ namespace IPFS.Services.Handlers
             var peerListResult = await peerListTask;
             var localStorageResult = await localStorageTask;
             
-            if(!peerInfoTask.Success)
+            if(!peerInfoResult.Success)
             {
                 result.AddErrors(peerInfoResult.Errors);
             }

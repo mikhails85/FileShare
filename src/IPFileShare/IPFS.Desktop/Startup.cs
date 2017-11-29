@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using IPFS.Desktop.DependencyInjection;
+using IPFS.Desktop.ControllerExtensions;
 
 namespace IPFS_Desktop
 {
@@ -21,6 +23,7 @@ namespace IPFS_Desktop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDependencyInjection(this.Configuration);
             services.AddMvc();
         }
 
@@ -40,6 +43,8 @@ namespace IPFS_Desktop
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseApiExtension();
+            
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
@@ -54,6 +59,7 @@ namespace IPFS_Desktop
             });
             
             applicationLifetime.ApplicationStopping.Register(StopProcess);
+            
         }
         
         private void StartProcess()

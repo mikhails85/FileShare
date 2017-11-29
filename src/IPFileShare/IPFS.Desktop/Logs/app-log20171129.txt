@@ -1,0 +1,368 @@
+2017-11-29 20:23:20.724 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:23:20.731 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:6002/api/v0/id
+2017-11-29 20:23:20.741 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:6002/api/v0/swarm/peers?verbose
+2017-11-29 20:23:20.746 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:6002/api/v0/pin/ls?type=recursive
+2017-11-29 20:25:53.364 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:25:53.364 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:6002/api/v0/id
+2017-11-29 20:25:53.365 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:6002/api/v0/swarm/peers?verbose
+2017-11-29 20:25:53.366 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:6002/api/v0/pin/ls?type=recursive
+2017-11-29 20:27:37.591 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:27:37.597 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:27:37.604 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:27:37.609 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:27:37.626 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:27:37.628 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:27:37.658 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:27:37.658 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:27:37.660 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":3,"FileStrored":2}
+2017-11-29 20:27:37.660 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:27:55.465 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:27:55.465 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:27:55.466 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:27:55.469 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:27:55.471 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:27:55.471 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:27:55.473 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:27:55.473 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:27:55.475 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":28,"FileStrored":2}
+2017-11-29 20:27:55.475 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:01.986 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:28:01.986 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:28:01.987 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:28:01.987 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:28:01.989 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:28:01.989 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:28:01.991 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:28:01.991 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:01.991 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":29,"FileStrored":2}
+2017-11-29 20:28:01.991 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:06.243 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:28:06.243 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:28:06.244 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:28:06.245 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:28:06.246 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:28:06.246 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:28:06.249 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:28:06.249 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:06.249 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":29,"FileStrored":2}
+2017-11-29 20:28:06.249 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:11.735 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:28:11.735 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:28:11.739 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:28:11.739 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:28:11.751 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:28:11.752 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:28:11.756 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:28:11.756 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:11.756 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":48,"FileStrored":2}
+2017-11-29 20:28:11.756 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:12.679 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:28:12.679 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:28:12.680 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:28:12.680 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:28:12.681 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:28:12.682 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:28:12.684 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:28:12.684 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:12.684 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":48,"FileStrored":2}
+2017-11-29 20:28:12.684 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:14.321 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:28:14.321 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:28:14.327 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:28:14.336 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:28:14.339 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:28:14.348 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:28:14.365 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:28:14.365 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:14.365 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":48,"FileStrored":2}
+2017-11-29 20:28:14.365 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:15.202 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:28:15.202 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:28:15.203 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:28:15.203 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:28:15.206 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:28:15.207 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:28:15.208 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:28:15.208 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:15.208 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":48,"FileStrored":2}
+2017-11-29 20:28:15.208 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:16.521 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:28:16.521 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:28:16.522 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:28:16.522 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:28:16.526 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:28:16.527 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:28:16.529 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:28:16.529 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:28:16.529 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":48,"FileStrored":2}
+2017-11-29 20:28:16.529 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:32:41.728 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:32:41.728 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:32:41.734 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:32:41.738 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:32:41.740 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:32:41.741 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:32:41.746 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:32:41.746 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:32:41.746 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":245,"FileStrored":2}
+2017-11-29 20:32:41.746 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:32:55.510 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:32:55.511 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:32:55.511 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:32:55.511 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:32:55.513 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:32:55.513 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:32:55.519 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:32:55.520 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:32:55.520 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":245,"FileStrored":2}
+2017-11-29 20:32:55.520 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:32:59.180 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:32:59.180 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:32:59.181 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:32:59.181 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:32:59.183 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:32:59.184 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:32:59.190 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:32:59.190 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:32:59.190 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":244,"FileStrored":2}
+2017-11-29 20:32:59.190 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:13.932 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:13.932 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:13.935 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:13.935 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:13.939 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:13.940 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:13.943 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:13.943 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:13.943 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:13.943 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:15.066 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:15.066 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:15.067 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:15.068 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:15.069 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:15.069 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:15.075 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:15.075 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:15.075 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:15.075 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:15.963 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:15.963 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:15.964 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:15.965 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:15.966 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:15.966 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:15.977 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:15.977 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:15.977 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:15.977 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:21.875 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:21.875 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:21.876 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:21.876 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:21.878 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:21.878 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:21.884 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:21.884 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:21.884 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:21.884 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:22.782 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:22.782 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:22.783 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:22.783 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:22.784 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:22.785 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:22.791 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:22.791 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:22.791 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:22.791 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:23.697 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:23.698 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:23.698 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:23.699 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:23.700 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:23.701 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:23.707 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:23.707 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:23.707 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:23.707 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:25.562 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:25.562 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:25.562 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:25.563 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:25.566 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:25.567 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:25.575 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:25.575 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:25.575 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:25.575 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:26.283 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:26.283 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:26.284 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:26.287 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:26.288 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:26.289 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:26.294 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:26.294 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:26.294 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:26.294 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:27.016 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:27.016 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:27.017 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:27.017 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:27.018 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:27.018 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:27.028 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:27.028 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:27.029 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:27.029 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:27.792 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:27.792 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:27.793 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:27.793 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:27.794 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:27.795 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:27.801 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:27.801 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:27.801 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:27.801 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:29.006 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:29.006 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:29.006 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:29.007 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:29.009 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:29.010 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:29.016 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:29.016 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:29.016 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:29.016 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:31.445 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:31.445 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:31.446 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:31.446 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:31.448 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:31.448 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:31.455 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:31.455 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:31.455 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":247,"FileStrored":2}
+2017-11-29 20:33:31.455 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:35.715 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:35.715 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:35.716 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:35.716 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:35.717 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:35.718 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:35.739 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:35.739 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:35.739 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":254,"FileStrored":2}
+2017-11-29 20:33:35.739 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:36.615 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:36.615 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:36.616 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:36.616 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:36.617 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:36.618 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:36.624 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:36.624 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:36.624 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":254,"FileStrored":2}
+2017-11-29 20:33:36.624 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:37.826 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:37.826 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:37.827 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:37.827 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:37.829 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:37.829 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:37.836 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:37.836 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:37.836 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":254,"FileStrored":2}
+2017-11-29 20:33:37.836 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:39.171 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:39.171 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:39.172 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:39.172 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:39.174 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:39.174 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:39.180 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:39.180 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:39.180 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":254,"FileStrored":2}
+2017-11-29 20:33:39.180 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:40.115 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:40.115 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:40.116 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:40.116 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:40.117 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:40.118 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:40.124 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:40.124 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:40.124 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":254,"FileStrored":2}
+2017-11-29 20:33:40.124 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:41.060 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:41.061 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:41.061 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:41.061 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:41.063 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:41.063 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:41.069 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:41.069 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:41.069 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":254,"FileStrored":2}
+2017-11-29 20:33:41.069 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:47.220 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:47.220 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:47.221 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:47.221 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:47.222 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:47.223 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:47.229 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:47.229 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:47.229 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":261,"FileStrored":2}
+2017-11-29 20:33:47.229 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:50.110 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:50.110 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:50.110 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:50.111 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:50.116 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:50.117 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:50.120 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:50.120 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:50.120 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":261,"FileStrored":2}
+2017-11-29 20:33:50.120 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:56.520 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:56.521 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:56.521 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:56.522 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:56.526 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:56.527 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:56.535 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:56.535 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:56.536 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":261,"FileStrored":2}
+2017-11-29 20:33:56.536 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:59.118 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:33:59.118 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:33:59.119 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:33:59.121 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:33:59.122 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:33:59.130 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:33:59.145 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:33:59.145 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:33:59.145 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":262,"FileStrored":2}
+2017-11-29 20:33:59.145 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:34:00.175 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:34:00.175 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:34:00.175 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:34:00.176 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:34:00.177 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:34:00.178 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:34:00.184 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:34:00.184 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:34:00.185 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":262,"FileStrored":2}
+2017-11-29 20:34:00.185 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:34:01.684 +00:00 [] IPFS.Desktop.Controllers.ClientController - Calling Client Info
+2017-11-29 20:34:01.684 +00:00 [] IPFS.Integration.Messages.GetPeerInformation - http://0.0.0.0:5002/api/v0/id
+2017-11-29 20:34:01.685 +00:00 [] IPFS.Integration.Messages.GetPeersMessage - http://0.0.0.0:5002/api/v0/swarm/peers?verbose
+2017-11-29 20:34:01.685 +00:00 [] IPFS.Integration.Messages.GetLocalObjectListMessage - http://0.0.0.0:5002/api/v0/pin/ls?type=recursive
+2017-11-29 20:34:01.687 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv
+2017-11-29 20:34:01.687 +00:00 [] IPFS.Integration.Messages.GetFileInfoMessage - http://0.0.0.0:5002/api/v0/file/ls?arg=QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+2017-11-29 20:34:01.693 +00:00 [] IPFS.Desktop.Controllers.ClientController - Called Client Info - Result:
+2017-11-29 20:34:01.694 +00:00 [] --------------------------------------------------------------------
+2017-11-29 20:34:01.694 +00:00 [] {"PeerId":"QmRwqBHWAwbtRRMqCfKM8eCDX7U2BguVW2taDvL77p5xp9","PeerCount":262,"FileStrored":2}
+2017-11-29 20:34:01.694 +00:00 [] --------------------------------------------------------------------
