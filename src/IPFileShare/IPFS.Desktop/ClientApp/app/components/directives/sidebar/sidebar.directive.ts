@@ -12,7 +12,7 @@ export class SidebarToggleDirective {
   @HostListener('click', ['$event'])
   toggleOpen($event: any) {
     $event.preventDefault();
-    document.querySelector('body').classList.toggle('sidebar-hidden');
+    document.querySelector('app').classList.toggle('sidebar-hidden');
   }
 }
 
@@ -25,7 +25,7 @@ export class SidebarMinimizeDirective {
   @HostListener('click', ['$event'])
   toggleOpen($event: any) {
     $event.preventDefault();
-    document.querySelector('body').classList.toggle('sidebar-minimized');
+    document.querySelector('app').classList.toggle('sidebar-minimized');
   }
 }
 
@@ -38,7 +38,7 @@ export class BrandMinimizeDirective {
   @HostListener('click', ['$event'])
   toggleOpen($event: any) {
     $event.preventDefault();
-    document.querySelector('body').classList.toggle('brand-minimized');
+    document.querySelector('app').classList.toggle('brand-minimized');
   }
 }
 
@@ -56,7 +56,7 @@ export class MobileSidebarToggleDirective {
   @HostListener('click', ['$event'])
   toggleOpen($event: any) {
     $event.preventDefault();
-    document.querySelector('body').classList.toggle('sidebar-mobile-show');
+    document.querySelector('app').classList.toggle('sidebar-mobile-show');
   }
 }
 
@@ -91,8 +91,8 @@ export class SidebarOffCanvasCloseDirective {
   toggleOpen($event: any) {
     $event.preventDefault();
 
-    if (this.hasClass(document.querySelector('body'), 'sidebar-off-canvas')) {
-      this.toggleClass(document.querySelector('body'), 'sidebar-opened');
+    if (this.hasClass(document.querySelector('app'), 'sidebar-off-canvas')) {
+      this.toggleClass(document.querySelector('app'), 'sidebar-opened');
     }
   }
 }

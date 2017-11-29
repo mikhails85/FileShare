@@ -1,0 +1,302 @@
+2017-11-29 07:06:52.998 +00:00 [] Starting web host
+2017-11-29 07:06:55.073 +00:00 [] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2017-11-29 07:07:43.914 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/  
+2017-11-29 07:07:44.262 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 07:07:46.603 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 07:07:49.052 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 4839.3144ms
+2017-11-29 07:07:49.065 +00:00 [] Request finished in 5167.1541ms 200 text/html; charset=utf-8
+2017-11-29 07:07:49.429 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/style.bundle.css?v=oZ4bhKj3ZrWbkhcJOML5Y1tpnbxbw_Cr0pwkZpvIFNo  
+2017-11-29 07:07:49.443 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=FdVkLZxa8yPMIc1qNLOoS1ETzeAJj-cZdibvjGNsJvM  
+2017-11-29 07:07:49.444 +00:00 [] Sending file. Request path: '/dist/style.bundle.css'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/style.bundle.css'
+2017-11-29 07:07:49.444 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-11-29 07:07:49.445 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-11-29 07:07:49.446 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-11-29 07:07:49.462 +00:00 [] Request finished in 16.2013ms 200 image/png
+2017-11-29 07:07:49.549 +00:00 [] Request finished in 120.2009ms 200 text/css
+2017-11-29 07:07:49.758 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.css?v=pbF0KwsYSNU9O9ijWOG6PBavhE0vaARCQf564e9BxUo  
+2017-11-29 07:07:49.758 +00:00 [] Sending file. Request path: '/dist/vendor.css'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/vendor.css'
+2017-11-29 07:07:49.759 +00:00 [] Request finished in 1.0325ms 200 text/css
+2017-11-29 07:07:49.867 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.js?v=T70t3r0qm80F_oAvJawzRyT6ZjhUJKl1nU0wAh4PBdY  
+2017-11-29 07:07:49.867 +00:00 [] Sending file. Request path: '/dist/vendor.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/vendor.js'
+2017-11-29 07:07:50.194 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/2.jpg  
+2017-11-29 07:07:50.194 +00:00 [] Sending file. Request path: '/assets/img/avatars/2.jpg'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/avatars/2.jpg'
+2017-11-29 07:07:50.195 +00:00 [] Request finished in 1.0481ms 200 image/jpeg
+2017-11-29 07:07:50.313 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/3.jpg  
+2017-11-29 07:07:50.314 +00:00 [] Sending file. Request path: '/assets/img/avatars/3.jpg'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/avatars/3.jpg'
+2017-11-29 07:07:50.314 +00:00 [] Request finished in 1.385ms 200 image/jpeg
+2017-11-29 07:07:50.410 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/5.jpg  
+2017-11-29 07:07:50.411 +00:00 [] Sending file. Request path: '/assets/img/avatars/5.jpg'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/avatars/5.jpg'
+2017-11-29 07:07:50.412 +00:00 [] Request finished in 1.2424ms 200 image/jpeg
+2017-11-29 07:07:50.432 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/8.jpg  
+2017-11-29 07:07:50.432 +00:00 [] Sending file. Request path: '/assets/img/avatars/8.jpg'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/avatars/8.jpg'
+2017-11-29 07:07:50.432 +00:00 [] Request finished in 1.0409ms 200 image/jpeg
+2017-11-29 07:07:50.596 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/4.jpg  
+2017-11-29 07:07:50.596 +00:00 [] Sending file. Request path: '/assets/img/avatars/4.jpg'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/avatars/4.jpg'
+2017-11-29 07:07:50.597 +00:00 [] Request finished in 1.1346ms 200 image/jpeg
+2017-11-29 07:07:50.612 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/7.jpg  
+2017-11-29 07:07:50.612 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/6.jpg  
+2017-11-29 07:07:50.613 +00:00 [] Sending file. Request path: '/assets/img/avatars/6.jpg'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/avatars/6.jpg'
+2017-11-29 07:07:50.613 +00:00 [] Sending file. Request path: '/assets/img/avatars/7.jpg'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/avatars/7.jpg'
+2017-11-29 07:07:50.613 +00:00 [] Request finished in 1.0333ms 200 image/jpeg
+2017-11-29 07:07:50.613 +00:00 [] Request finished in 1.0565ms 200 image/jpeg
+2017-11-29 07:07:50.657 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo.png  
+2017-11-29 07:07:50.658 +00:00 [] Sending file. Request path: '/assets/img/logo.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/logo.png'
+2017-11-29 07:07:50.661 +00:00 [] Request finished in 3.6484ms 200 image/png
+2017-11-29 07:07:51.116 +00:00 [] Request finished in 1673.2336ms 200 application/javascript
+2017-11-29 07:07:51.191 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/fonts/Simple-Line-Icons.woff2  
+2017-11-29 07:07:51.191 +00:00 [] Sending file. Request path: '/dist/fonts/Simple-Line-Icons.woff2'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/fonts/Simple-Line-Icons.woff2'
+2017-11-29 07:07:51.195 +00:00 [] Request finished in 3.725ms 200 font/woff2
+2017-11-29 07:07:54.092 +00:00 [] Request finished in 4225.6656ms 200 application/javascript
+2017-11-29 07:08:43.774 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/home  
+2017-11-29 07:08:43.777 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 07:08:43.779 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 07:08:44.483 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 705.90280000000007ms
+2017-11-29 07:08:44.483 +00:00 [] Request finished in 709.5167ms 200 text/html; charset=utf-8
+2017-11-29 07:08:44.759 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.css?v=pbF0KwsYSNU9O9ijWOG6PBavhE0vaARCQf564e9BxUo  
+2017-11-29 07:08:44.767 +00:00 [] The file /dist/vendor.css was not modified
+2017-11-29 07:08:44.772 +00:00 [] Request finished in 13.1493ms 304 text/css
+2017-11-29 07:08:44.888 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=FdVkLZxa8yPMIc1qNLOoS1ETzeAJj-cZdibvjGNsJvM  
+2017-11-29 07:08:44.889 +00:00 [] The file /dist/main-client.js was not modified
+2017-11-29 07:08:44.889 +00:00 [] Request finished in 0.813ms 304 application/javascript
+2017-11-29 07:08:45.299 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/style.bundle.css?v=oZ4bhKj3ZrWbkhcJOML5Y1tpnbxbw_Cr0pwkZpvIFNo  
+2017-11-29 07:08:45.299 +00:00 [] The file /dist/style.bundle.css was not modified
+2017-11-29 07:08:45.299 +00:00 [] Request finished in 0.7234ms 304 text/css
+2017-11-29 07:08:45.301 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.js?v=T70t3r0qm80F_oAvJawzRyT6ZjhUJKl1nU0wAh4PBdY  
+2017-11-29 07:08:45.301 +00:00 [] The file /dist/vendor.js was not modified
+2017-11-29 07:08:45.301 +00:00 [] Request finished in 0.4153ms 304 application/javascript
+2017-11-29 07:08:45.426 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/2.jpg  
+2017-11-29 07:08:45.426 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/3.jpg  
+2017-11-29 07:08:45.427 +00:00 [] The file /assets/img/avatars/3.jpg was not modified
+2017-11-29 07:08:45.427 +00:00 [] The file /assets/img/avatars/2.jpg was not modified
+2017-11-29 07:08:45.427 +00:00 [] Request finished in 0.8631ms 304 image/jpeg
+2017-11-29 07:08:45.427 +00:00 [] Request finished in 0.8156ms 304 image/jpeg
+2017-11-29 07:08:45.430 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/6.jpg  
+2017-11-29 07:08:45.430 +00:00 [] The file /assets/img/avatars/6.jpg was not modified
+2017-11-29 07:08:45.430 +00:00 [] Request finished in 0.5546ms 304 image/jpeg
+2017-11-29 07:08:45.530 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/8.jpg  
+2017-11-29 07:08:45.530 +00:00 [] The file /assets/img/avatars/8.jpg was not modified
+2017-11-29 07:08:45.531 +00:00 [] Request finished in 0.7544ms 304 image/jpeg
+2017-11-29 07:08:45.532 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo.png  
+2017-11-29 07:08:45.532 +00:00 [] The file /assets/img/logo.png was not modified
+2017-11-29 07:08:45.532 +00:00 [] Request finished in 0.4114ms 304 image/png
+2017-11-29 07:08:45.538 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/4.jpg  
+2017-11-29 07:08:45.538 +00:00 [] The file /assets/img/avatars/4.jpg was not modified
+2017-11-29 07:08:45.539 +00:00 [] Request finished in 0.4448ms 304 image/jpeg
+2017-11-29 07:08:45.625 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/7.jpg  
+2017-11-29 07:08:45.625 +00:00 [] The file /assets/img/avatars/7.jpg was not modified
+2017-11-29 07:08:45.625 +00:00 [] Request finished in 0.7168ms 304 image/jpeg
+2017-11-29 07:08:45.851 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/5.jpg  
+2017-11-29 07:08:45.851 +00:00 [] The file /assets/img/avatars/5.jpg was not modified
+2017-11-29 07:08:45.852 +00:00 [] Request finished in 0.725ms 304 image/jpeg
+2017-11-29 07:13:24.982 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo-symbol.png  
+2017-11-29 07:13:24.983 +00:00 [] Sending file. Request path: '/assets/img/logo-symbol.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/logo-symbol.png'
+2017-11-29 07:13:24.985 +00:00 [] Request finished in 2.8779ms 200 image/png
+2017-11-29 07:22:15.992 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/directives/sidebar/sidebar.directive.ts
+2017-11-29 07:26:33.343 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/home  
+2017-11-29 07:26:33.343 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 07:26:33.344 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 07:26:34.854 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 1510.8129000000001ms
+2017-11-29 07:26:34.855 +00:00 [] Request finished in 1511.5923ms 200 text/html; charset=utf-8
+2017-11-29 07:26:35.239 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=n4gnatPZ8qDR_IcCd-0st4g3WH7G9Yo5H-lD2sslKQE  
+2017-11-29 07:26:35.239 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-11-29 07:26:35.549 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.css?v=pbF0KwsYSNU9O9ijWOG6PBavhE0vaARCQf564e9BxUo  
+2017-11-29 07:26:35.549 +00:00 [] The file /dist/vendor.css was not modified
+2017-11-29 07:26:35.549 +00:00 [] Request finished in 0.8133ms 304 text/css
+2017-11-29 07:26:35.648 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/style.bundle.css?v=oZ4bhKj3ZrWbkhcJOML5Y1tpnbxbw_Cr0pwkZpvIFNo  
+2017-11-29 07:26:35.649 +00:00 [] The file /dist/style.bundle.css was not modified
+2017-11-29 07:26:35.649 +00:00 [] Request finished in 0.9256ms 304 text/css
+2017-11-29 07:26:35.675 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.js?v=T70t3r0qm80F_oAvJawzRyT6ZjhUJKl1nU0wAh4PBdY  
+2017-11-29 07:26:35.675 +00:00 [] The file /dist/vendor.js was not modified
+2017-11-29 07:26:35.675 +00:00 [] Request finished in 0.8698ms 304 application/javascript
+2017-11-29 07:26:35.762 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/6.jpg  
+2017-11-29 07:26:35.762 +00:00 [] The file /assets/img/avatars/6.jpg was not modified
+2017-11-29 07:26:35.762 +00:00 [] Request finished in 0.7526ms 304 image/jpeg
+2017-11-29 07:26:35.828 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/3.jpg  
+2017-11-29 07:26:35.829 +00:00 [] The file /assets/img/avatars/3.jpg was not modified
+2017-11-29 07:26:35.829 +00:00 [] Request finished in 0.7574ms 304 image/jpeg
+2017-11-29 07:26:35.868 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/5.jpg  
+2017-11-29 07:26:35.868 +00:00 [] The file /assets/img/avatars/5.jpg was not modified
+2017-11-29 07:26:35.869 +00:00 [] Request finished in 0.7048ms 304 image/jpeg
+2017-11-29 07:26:35.908 +00:00 [] Request finished in 668.8371ms 200 application/javascript
+2017-11-29 07:26:35.981 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo.png  
+2017-11-29 07:26:35.982 +00:00 [] The file /assets/img/logo.png was not modified
+2017-11-29 07:26:35.982 +00:00 [] Request finished in 0.6852ms 304 image/png
+2017-11-29 07:26:36.027 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/7.jpg  
+2017-11-29 07:26:36.027 +00:00 [] The file /assets/img/avatars/7.jpg was not modified
+2017-11-29 07:26:36.027 +00:00 [] Request finished in 0.7107ms 304 image/jpeg
+2017-11-29 07:26:36.191 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/2.jpg  
+2017-11-29 07:26:36.191 +00:00 [] The file /assets/img/avatars/2.jpg was not modified
+2017-11-29 07:26:36.191 +00:00 [] Request finished in 0.7348ms 304 image/jpeg
+2017-11-29 07:26:36.360 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/8.jpg  
+2017-11-29 07:26:36.361 +00:00 [] The file /assets/img/avatars/8.jpg was not modified
+2017-11-29 07:26:36.361 +00:00 [] Request finished in 0.6682ms 304 image/jpeg
+2017-11-29 07:26:36.452 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/4.jpg  
+2017-11-29 07:26:36.452 +00:00 [] The file /assets/img/avatars/4.jpg was not modified
+2017-11-29 07:26:36.452 +00:00 [] Request finished in 0.7306ms 304 image/jpeg
+2017-11-29 07:27:05.874 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo-symbol.png  
+2017-11-29 07:27:05.874 +00:00 [] The file /assets/img/logo-symbol.png was not modified
+2017-11-29 07:27:05.874 +00:00 [] Request finished in 0.7547ms 304 image/png
+2017-11-29 08:00:48.641 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/  
+2017-11-29 08:00:48.642 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 08:00:48.644 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 08:00:49.402 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 760.7146ms
+2017-11-29 08:00:49.403 +00:00 [] Request finished in 761.5441ms 200 text/html; charset=utf-8
+2017-11-29 08:00:50.395 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=n4gnatPZ8qDR_IcCd-0st4g3WH7G9Yo5H-lD2sslKQE  
+2017-11-29 08:00:50.396 +00:00 [] The file /dist/main-client.js was not modified
+2017-11-29 08:00:50.396 +00:00 [] Request finished in 0.6469ms 304 application/javascript
+2017-11-29 08:00:53.811 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/  
+2017-11-29 08:00:53.812 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 08:00:53.812 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 08:00:54.377 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 565.0596ms
+2017-11-29 08:00:54.377 +00:00 [] Request finished in 565.9913ms 200 text/html; charset=utf-8
+2017-11-29 08:01:58.955 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/directives/aside/aside.directive.ts
+2017-11-29 08:02:28.538 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/home  
+2017-11-29 08:02:28.539 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 08:02:28.539 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 08:02:30.100 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 1561.4359000000002ms
+2017-11-29 08:02:30.100 +00:00 [] Request finished in 1562.4439ms 200 text/html; charset=utf-8
+2017-11-29 08:02:30.489 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=Ct8mwEJHY1wSKwhS3hTgFUToGwlokUKyIW_PhEkWu7I  
+2017-11-29 08:02:30.490 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-11-29 08:02:30.781 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.css?v=pbF0KwsYSNU9O9ijWOG6PBavhE0vaARCQf564e9BxUo  
+2017-11-29 08:02:30.782 +00:00 [] The file /dist/vendor.css was not modified
+2017-11-29 08:02:30.782 +00:00 [] Request finished in 0.788ms 304 text/css
+2017-11-29 08:02:30.923 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/style.bundle.css?v=oZ4bhKj3ZrWbkhcJOML5Y1tpnbxbw_Cr0pwkZpvIFNo  
+2017-11-29 08:02:30.923 +00:00 [] The file /dist/style.bundle.css was not modified
+2017-11-29 08:02:30.923 +00:00 [] Request finished in 0.8865ms 304 text/css
+2017-11-29 08:02:30.942 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.js?v=T70t3r0qm80F_oAvJawzRyT6ZjhUJKl1nU0wAh4PBdY  
+2017-11-29 08:02:30.943 +00:00 [] The file /dist/vendor.js was not modified
+2017-11-29 08:02:30.943 +00:00 [] Request finished in 1.037ms 304 application/javascript
+2017-11-29 08:02:31.037 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/6.jpg  
+2017-11-29 08:02:31.038 +00:00 [] The file /assets/img/avatars/6.jpg was not modified
+2017-11-29 08:02:31.038 +00:00 [] Request finished in 0.9325ms 304 image/jpeg
+2017-11-29 08:02:31.104 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/4.jpg  
+2017-11-29 08:02:31.104 +00:00 [] The file /assets/img/avatars/4.jpg was not modified
+2017-11-29 08:02:31.105 +00:00 [] Request finished in 0.6919ms 304 image/jpeg
+2017-11-29 08:02:31.147 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/2.jpg  
+2017-11-29 08:02:31.147 +00:00 [] The file /assets/img/avatars/2.jpg was not modified
+2017-11-29 08:02:31.148 +00:00 [] Request finished in 0.6469ms 304 image/jpeg
+2017-11-29 08:02:31.147 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/3.jpg  
+2017-11-29 08:02:31.148 +00:00 [] The file /assets/img/avatars/3.jpg was not modified
+2017-11-29 08:02:31.148 +00:00 [] Request finished in 1.2782ms 304 image/jpeg
+2017-11-29 08:02:31.215 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/8.jpg  
+2017-11-29 08:02:31.215 +00:00 [] The file /assets/img/avatars/8.jpg was not modified
+2017-11-29 08:02:31.215 +00:00 [] Request finished in 0.7703ms 304 image/jpeg
+2017-11-29 08:02:31.249 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo.png  
+2017-11-29 08:02:31.249 +00:00 [] The file /assets/img/logo.png was not modified
+2017-11-29 08:02:31.250 +00:00 [] Request finished in 0.9986ms 304 image/png
+2017-11-29 08:02:31.346 +00:00 [] Request finished in 856.7913ms 200 application/javascript
+2017-11-29 08:02:31.458 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/7.jpg  
+2017-11-29 08:02:31.458 +00:00 [] The file /assets/img/avatars/7.jpg was not modified
+2017-11-29 08:02:31.459 +00:00 [] Request finished in 1.2714ms 304 image/jpeg
+2017-11-29 08:02:31.571 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/5.jpg  
+2017-11-29 08:02:31.571 +00:00 [] The file /assets/img/avatars/5.jpg was not modified
+2017-11-29 08:02:31.572 +00:00 [] Request finished in 0.857ms 304 image/jpeg
+2017-11-29 08:04:29.946 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/  
+2017-11-29 08:04:29.946 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 08:04:29.946 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 08:04:30.754 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 808.0596ms
+2017-11-29 08:04:30.754 +00:00 [] Request finished in 808.8303ms 200 text/html; charset=utf-8
+2017-11-29 08:04:31.551 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=Ct8mwEJHY1wSKwhS3hTgFUToGwlokUKyIW_PhEkWu7I  
+2017-11-29 08:04:31.551 +00:00 [] The file /dist/main-client.js was not modified
+2017-11-29 08:04:31.551 +00:00 [] Request finished in 0.6557ms 304 application/javascript
+2017-11-29 08:05:17.483 +00:00 [] Received SIGINT. Waiting for .NET process to exit...
+2017-11-29 08:10:47.486 +00:00 [] Starting web host
+2017-11-29 08:10:50.839 +00:00 [] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2017-11-29 08:10:55.695 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/home  
+2017-11-29 08:10:56.057 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 08:10:58.718 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 08:11:01.329 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 5297.7943000000005ms
+2017-11-29 08:11:01.349 +00:00 [] Request finished in 5669.7405ms 200 text/html; charset=utf-8
+2017-11-29 08:11:01.630 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.css?v=pbF0KwsYSNU9O9ijWOG6PBavhE0vaARCQf564e9BxUo  
+2017-11-29 08:11:01.655 +00:00 [] The file /dist/vendor.css was not modified
+2017-11-29 08:11:01.663 +00:00 [] Request finished in 32.5728ms 304 text/css
+2017-11-29 08:11:02.143 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/style.bundle.css?v=oZ4bhKj3ZrWbkhcJOML5Y1tpnbxbw_Cr0pwkZpvIFNo  
+2017-11-29 08:11:02.144 +00:00 [] The file /dist/style.bundle.css was not modified
+2017-11-29 08:11:02.144 +00:00 [] Request finished in 1.0805ms 304 text/css
+2017-11-29 08:11:02.154 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=ADOSUt00CgZExX7i9EfxdSDZG80rnrgsd74v45RdSc0  
+2017-11-29 08:11:02.155 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.js?v=T70t3r0qm80F_oAvJawzRyT6ZjhUJKl1nU0wAh4PBdY  
+2017-11-29 08:11:02.155 +00:00 [] The file /dist/vendor.js was not modified
+2017-11-29 08:11:02.155 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-11-29 08:11:02.155 +00:00 [] Request finished in 0.9658ms 304 application/javascript
+2017-11-29 08:11:02.319 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/2.jpg  
+2017-11-29 08:11:02.320 +00:00 [] The file /assets/img/avatars/2.jpg was not modified
+2017-11-29 08:11:02.320 +00:00 [] Request finished in 0.9239ms 304 image/jpeg
+2017-11-29 08:11:02.423 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/5.jpg  
+2017-11-29 08:11:02.424 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/3.jpg  
+2017-11-29 08:11:02.424 +00:00 [] The file /assets/img/avatars/5.jpg was not modified
+2017-11-29 08:11:02.424 +00:00 [] The file /assets/img/avatars/3.jpg was not modified
+2017-11-29 08:11:02.424 +00:00 [] Request finished in 0.9949ms 304 image/jpeg
+2017-11-29 08:11:02.424 +00:00 [] Request finished in 0.6366ms 304 image/jpeg
+2017-11-29 08:11:02.479 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/8.jpg  
+2017-11-29 08:11:02.479 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/4.jpg  
+2017-11-29 08:11:02.480 +00:00 [] The file /assets/img/avatars/8.jpg was not modified
+2017-11-29 08:11:02.480 +00:00 [] The file /assets/img/avatars/4.jpg was not modified
+2017-11-29 08:11:02.480 +00:00 [] Request finished in 0.699ms 304 image/jpeg
+2017-11-29 08:11:02.480 +00:00 [] Request finished in 0.889ms 304 image/jpeg
+2017-11-29 08:11:02.533 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo.png  
+2017-11-29 08:11:02.533 +00:00 [] The file /assets/img/logo.png was not modified
+2017-11-29 08:11:02.534 +00:00 [] Request finished in 0.7652ms 304 image/png
+2017-11-29 08:11:02.540 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/7.jpg  
+2017-11-29 08:11:02.540 +00:00 [] The file /assets/img/avatars/7.jpg was not modified
+2017-11-29 08:11:02.541 +00:00 [] Request finished in 0.733ms 304 image/jpeg
+2017-11-29 08:11:02.692 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/6.jpg  
+2017-11-29 08:11:02.692 +00:00 [] The file /assets/img/avatars/6.jpg was not modified
+2017-11-29 08:11:02.692 +00:00 [] Request finished in 0.7346ms 304 image/jpeg
+2017-11-29 08:11:03.097 +00:00 [] Request finished in 943.6376ms 200 application/javascript
+2017-11-29 08:11:06.023 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-11-29 08:11:06.023 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-11-29 08:11:06.024 +00:00 [] Request finished in 1.818ms 200 image/png
+2017-11-29 08:17:48.404 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/fonts/fontawesome-webfont.woff2  
+2017-11-29 08:17:48.404 +00:00 [] Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/fonts/fontawesome-webfont.woff2'
+2017-11-29 08:17:48.421 +00:00 [] Request finished in 17.0302ms 200 font/woff2
+2017-11-29 08:18:43.608 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/controls/app-header/app-header.component.html
+2017-11-29 08:19:18.427 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/home  
+2017-11-29 08:19:18.429 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 08:19:18.432 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 08:19:20.291 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 1862.2296000000001ms
+2017-11-29 08:19:20.292 +00:00 [] Request finished in 1864.7715ms 200 text/html; charset=utf-8
+2017-11-29 08:19:20.543 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.css?v=pbF0KwsYSNU9O9ijWOG6PBavhE0vaARCQf564e9BxUo  
+2017-11-29 08:19:20.544 +00:00 [] The file /dist/vendor.css was not modified
+2017-11-29 08:19:20.544 +00:00 [] Request finished in 0.7143ms 304 text/css
+2017-11-29 08:19:21.064 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/vendor.js?v=T70t3r0qm80F_oAvJawzRyT6ZjhUJKl1nU0wAh4PBdY  
+2017-11-29 08:19:21.065 +00:00 [] The file /dist/vendor.js was not modified
+2017-11-29 08:19:21.065 +00:00 [] Request finished in 0.9859ms 304 application/javascript
+2017-11-29 08:19:21.118 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/style.bundle.css?v=oZ4bhKj3ZrWbkhcJOML5Y1tpnbxbw_Cr0pwkZpvIFNo  
+2017-11-29 08:19:21.118 +00:00 [] The file /dist/style.bundle.css was not modified
+2017-11-29 08:19:21.118 +00:00 [] Request finished in 0.8404ms 304 text/css
+2017-11-29 08:19:21.119 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=OPInEEK0388AV1jb62ynyPR1xgxZ398h_ERWEQ9D9t0  
+2017-11-29 08:19:21.120 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-11-29 08:19:21.297 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/7.jpg  
+2017-11-29 08:19:21.297 +00:00 [] The file /assets/img/avatars/7.jpg was not modified
+2017-11-29 08:19:21.298 +00:00 [] Request finished in 1.0048ms 304 image/jpeg
+2017-11-29 08:19:21.401 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/6.jpg  
+2017-11-29 08:19:21.402 +00:00 [] The file /assets/img/avatars/6.jpg was not modified
+2017-11-29 08:19:21.402 +00:00 [] Request finished in 0.7939ms 304 image/jpeg
+2017-11-29 08:19:21.408 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/5.jpg  
+2017-11-29 08:19:21.409 +00:00 [] The file /assets/img/avatars/5.jpg was not modified
+2017-11-29 08:19:21.409 +00:00 [] Request finished in 0.7319ms 304 image/jpeg
+2017-11-29 08:19:21.490 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/8.jpg  
+2017-11-29 08:19:21.490 +00:00 [] The file /assets/img/avatars/8.jpg was not modified
+2017-11-29 08:19:21.490 +00:00 [] Request finished in 0.8934ms 304 image/jpeg
+2017-11-29 08:19:21.515 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo.png  
+2017-11-29 08:19:21.516 +00:00 [] The file /assets/img/logo.png was not modified
+2017-11-29 08:19:21.516 +00:00 [] Request finished in 0.7369ms 304 image/png
+2017-11-29 08:19:21.522 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/4.jpg  
+2017-11-29 08:19:21.523 +00:00 [] The file /assets/img/avatars/4.jpg was not modified
+2017-11-29 08:19:21.523 +00:00 [] Request finished in 0.8575ms 304 image/jpeg
+2017-11-29 08:19:21.615 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/2.jpg  
+2017-11-29 08:19:21.616 +00:00 [] The file /assets/img/avatars/2.jpg was not modified
+2017-11-29 08:19:21.616 +00:00 [] Request finished in 0.644ms 304 image/jpeg
+2017-11-29 08:19:21.736 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/avatars/3.jpg  
+2017-11-29 08:19:21.736 +00:00 [] The file /assets/img/avatars/3.jpg was not modified
+2017-11-29 08:19:21.736 +00:00 [] Request finished in 0.8643ms 304 image/jpeg
+2017-11-29 08:19:21.783 +00:00 [] Request finished in 663.5565ms 200 application/javascript
+2017-11-29 08:19:34.175 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/  
+2017-11-29 08:19:34.175 +00:00 [] Executing action method IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-11-29 08:19:34.176 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-11-29 08:19:34.620 +00:00 [] Executed action IPFS_Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 444.77090000000004ms
+2017-11-29 08:19:34.621 +00:00 [] Request finished in 445.6519ms 200 text/html; charset=utf-8
+2017-11-29 08:19:34.984 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=OPInEEK0388AV1jb62ynyPR1xgxZ398h_ERWEQ9D9t0  
+2017-11-29 08:19:34.984 +00:00 [] The file /dist/main-client.js was not modified
+2017-11-29 08:19:34.984 +00:00 [] Request finished in 0.854ms 304 application/javascript
+2017-11-29 08:23:41.647 +00:00 [] Received SIGINT. Waiting for .NET process to exit...
