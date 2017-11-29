@@ -32,7 +32,8 @@ namespace IPFS.Desktop.DependencyInjection
                 
                 return new RESTClient(processConfig.API, messageProvider);
             })
-            .AutoRegisterInstanceOf<IApiMessage>();
+            .AutoRegisterInstanceOf<IApiMessage>()
+            .AutoRegisterInjectable();
         }
     }
 }

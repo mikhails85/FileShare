@@ -7,5 +7,8 @@ namespace IPFS.Services.DTO
 {
     public class ClientInfoDTO
     {
+        public string PeerId {get;set;}
+        public int PeerCount {get;set;}
+        public int FileStrored {get;set;}
     }
 }
