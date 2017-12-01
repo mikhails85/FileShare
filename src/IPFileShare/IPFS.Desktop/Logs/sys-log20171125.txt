@@ -1,2 +1,0 @@
-2017-11-25 13:26:53.641 +00:00 [] Starting web host
-2017-11-25 13:26:56.765 +00:00 [] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.

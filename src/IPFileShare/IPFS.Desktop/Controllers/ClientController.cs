@@ -22,11 +22,7 @@ namespace IPFS.Desktop.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> Info()
         {
-            this.logger.WarningMessage("Calling Client Info");
-            
             var result = await this.Handler<GetClientInformation>().Get();
-            
-            this.logger.Result(result, "Called Client Info");
             
             return this.Result(result);
         }

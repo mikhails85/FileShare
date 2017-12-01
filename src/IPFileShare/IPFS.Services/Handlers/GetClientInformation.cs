@@ -59,7 +59,8 @@ namespace IPFS.Services.Handlers
             result.SetValue(new ClientInfoDTO{
                 PeerId = peerInfoResult.Value.ID, 
                 PeerCount = peerListResult.Value.Count(),
-                FileStrored = localStorageResult.Value.Count()
+                FilesStrored = localStorageResult.Value.Count(),
+                TotalFilesSize = localStorageResult.Value.Sum(x=>x.Size)
             });
             
             return result;

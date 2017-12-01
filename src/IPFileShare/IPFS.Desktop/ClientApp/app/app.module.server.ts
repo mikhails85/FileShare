@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 import { AppModuleShared } from './app.module.shared';
 import { AppComponent } from './components/app/app.component';
-import { ViewService } from './services/view.service';
+import { ApiService } from './services/api.service';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -10,7 +10,9 @@ import { ViewService } from './services/view.service';
         ServerModule,
         AppModuleShared
     ],
-    providers: [ViewService]
+     providers: [
+        ApiService
+    ]
 })
 export class AppModule {
 }

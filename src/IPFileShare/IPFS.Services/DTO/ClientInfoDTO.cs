@@ -9,6 +9,7 @@ namespace IPFS.Services.DTO
     {
         public string PeerId {get;set;}
         public int PeerCount {get;set;}
-        public int FileStrored {get;set;}
+        public int FilesStrored {get;set;}
+        public long TotalFilesSize {get;set;}
     }
 }
