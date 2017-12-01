@@ -7,8 +7,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component';
 
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
+
+import { FilesComponent } from './components/files/files.component';
 
 // Import controls
 import {
@@ -62,9 +62,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 @NgModule({
     declarations: [
         AppComponent,
-        CounterComponent,
-        FetchDataComponent,
         HomeComponent,
+        FilesComponent,
         ...APP_COMPONENTS,
         ...APP_DIRECTIVES
     ],
@@ -75,8 +74,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'files', component: FilesComponent },
             { path: '**', redirectTo: 'home' }
         ]),
         BsDropdownModule.forRoot(),

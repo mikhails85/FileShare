@@ -1,11 +1,12 @@
 export const navigation = [
   {
     name: 'Dashboard',
-    url: '/dashboard',
-    icon: 'icon-speedometer',
-    badge: {
-      variant: 'info',
-      text: 'NEW'
-    }
-  }
+    url: '/home',
+    icon: 'icon-speedometer'
+  },
+  {
+    name: 'Local Storage',
+    url: '/files',
+    icon: 'icon-drawer'
+  },
 ];
