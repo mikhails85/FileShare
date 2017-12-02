@@ -235,3 +235,13 @@
 15:01:23.152584 version@stat F·[1 1] S·2MiB[1MiB 738KiB] Sc·[0.25 0.01]
 15:01:23.153747 db@janitor F·4 G·0
 15:01:23.153795 db@open done T·68.371376ms
+=============== Dec 2, 2017 (UTC) ===============
+15:07:48.005542 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:07:48.005771 version@stat F·[1 1] S·2MiB[1MiB 738KiB] Sc·[0.25 0.01]
+15:07:48.005788 db@open opening
+15:07:48.005861 journal@recovery F·1
+15:07:48.007108 journal@recovery recovering @60
+15:07:48.013007 memdb@flush created L0@62 N·3 S·433B "/lo..oot,v27470":"/pr..HOQ,v27468"
+15:07:48.014047 version@stat F·[2 1] S·2MiB[1MiB 738KiB] Sc·[0.50 0.01]
+15:07:48.016667 db@janitor F·5 G·0
+15:07:48.016698 db@open done T·10.896644ms

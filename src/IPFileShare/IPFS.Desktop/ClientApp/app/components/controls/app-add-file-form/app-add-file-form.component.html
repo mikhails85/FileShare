@@ -6,13 +6,13 @@
       </div>
       <div class="card-body">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <div class="form-group">
               <label for="name">Title</label>
               <input type="text" [(ngModel)]="content.title" class="form-control" id="name" placeholder="Enter your Title">
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-8">
             <div class="form-group">
               <label for="thumbnailPath">Thumbnail</label>
               <input type="text" class="form-control" [(ngModel)]="content.thumbnail" id="thumbnailPath" placeholder="Enter Thumbnail path">
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <div class="form-group">
               <label for="contentType">Type</label>
               <select class="form-control" [(ngModel)]="content.type" id="contentType" placeholder="Enter your Title">
@@ -36,7 +36,7 @@
               </select>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-8">
             <div class="form-group">
               <label for="filePath">File / Folder</label>
               <input type="text" class="form-control" [(ngModel)]="content.resource" id="filePath" placeholder="Enter file/folder path">

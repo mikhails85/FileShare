@@ -248,3 +248,141 @@
 2017-12-02 15:02:35.726 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
 2017-12-02 15:02:35.726 +00:00 [] Request finished in 1.09ms 200 image/png
 2017-12-02 15:03:17.422 +00:00 [] Received SIGINT. Waiting for .NET process to exit...
+2017-12-02 15:07:47.472 +00:00 [] Starting web host
+2017-12-02 15:07:49.265 +00:00 [] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2017-12-02 15:07:53.389 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/  
+2017-12-02 15:07:53.692 +00:00 [] Executing action method IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:07:55.900 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-02 15:08:01.738 +00:00 [] ApiService::handleError Response {
+  _body: '<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml">\n\n<head profile="http://www.w3.org/2005/10/profile">\n    <!--C9LOCAL_CODE_INJECT_PLACEHOLDER-(login-head)-DO_NOT_REMOVE-->\n    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n    <title>Sign-in | Cloud9 IDE</title>\n    <meta name="description" content="Meet Cloud9, development-as-a-service for Javascripters and other developers" />\n    <meta name="keywords" content="" />\n\n    <link rel="icon" type="image/gif" href="https://static.c9.io/nc-3.1.4029-b030f95b/static/homepage/favicon.ico" />\n\n    <!--C9LOCAL_CODE_INJECT_PLACEHOLDER-(login-loadedDetectionScript)-DO_NOT_REMOVE-->\n    <link href="https://static.c9.io/nc-3.1.4029-b030f95b/static/oldclient/homepage/style/signin.css" rel="stylesheet" type="text/css" />\n    <script type="text/javascript" src="https://static.c9.io/nc-3.1.4029-b030f95b/static/oldclient/homepage/js/prefixfree.min.js"></script>\n</head>\n\n<body class="">\n    <div id="signin_window">\n        <div id="signinViewport">\n            <div class="pageContainer">\n                <div id="barSignIn" class="page">\n                    <form id="signinForm">\n                        <h1 class="header">Sign in to Cloud9</h1>\n\n                        <div class="form-holder">\n                            <div id="txt_inpUsernameEmail" class="c9-textbox">\n                                <div class="c9-txt_fix">\n                                    <input type="text" id="inpUsernameEmail" placeholder="Username or email" name="inpUsernameEmail" tabindex="1" />\n                                </div>\n                            </div>\n                            <div id="txt_inpPassword" class="c9-textbox">\n                                <div class="c9-txt_fix">\n                                    <input type="password" id="inpPassword" placeholder="password" name="inpPassword" tabindex="2" />\n                                </div>\n                            </div>\n\n                            <div class="fbox">\n                                <div id="btnSignIn" class="action-button button" tabindex="4" accesskey="ENTER">Sign in</div>\n                            </div>\n\n                            <div>\n                                <a class="nounderline" href="/auth/password/reset" target="_self">Forgot password?</a>\n                                <span> - </span>\n                                <a class="nounderline" href="/auth/activate" target="_self">Didn\'t receive activation email?</a>\n                            </div>\n                        </div>\n                        <div id="barSignInStatusMsg" class="signinstatus-bar">\n                            <div id="lblSignInHeader" class="errorboxContent"></div>\n                            <div id="lblSignInStatus" class="errorboxContent"></div>\n                        </div>\n                    </form>\n                    <div class="signin_options">\n                        <a href="#" class="c9-button github-signin"></a>\n                        <a href="#" class="c9-button bitbucket-signin"></a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <script type="text/javascript" src="https://static.c9.io/nc-3.1.4029-b030f95b/static/oldclient/homepage/js/jquery-1.5.1.min.js"></script>\n    <script type="text/javascript" src="https://static.c9.io/nc-3.1.4029-b030f95b/static/oldclient/homepage/js/jquery.validate.min.js"></script>\n    <script type="text/javascript" src="https://static.c9.io/nc-3.1.4029-b030f95b/static/oldclient/homepage/js/components.js"></script>\n    <script type="text/javascript" src="https://static.c9.io/nc-3.1.4029-b030f95b/static/oldclient/homepage/js/code.js"></script>\n    <script type="text/javascript" src="https://static.c9.io/nc-3.1.4029-b030f95b/static/oldclient/homepage/js/signin.js"></script>\n</body>\n\n</html>',
+  status: 200,
+  ok: true,
+  statusText: 'OK',
+  headers: 
+   Headers {
+     _headers: 
+      Map {
+        'x-frame-options' => [Object],
+        'cache-control' => [Object],
+        'content-type' => [Object],
+        'access-control-allow-origin' => [Object],
+        'access-control-allow-methods' => [Object],
+        'access-control-allow-headers' => [Object],
+        'access-control-expose-headers' => [Object],
+        'access-control-max-age' => [Object],
+        'date' => [Object],
+        'transfer-encoding' => [Object],
+        'x-backend' => [Object],
+        'strict-transport-security' => [Object] },
+     _normalizedNames: 
+      Map {
+        'x-frame-options' => 'x-frame-options',
+        'cache-control' => 'cache-control',
+        'content-type' => 'content-type',
+        'access-control-allow-origin' => 'access-control-allow-origin',
+        'access-control-allow-methods' => 'access-control-allow-methods',
+        'access-control-allow-headers' => 'access-control-allow-headers',
+        'access-control-expose-headers' => 'access-control-expose-headers',
+        'access-control-max-age' => 'access-control-max-age',
+        'date' => 'date',
+        'transfer-encoding' => 'transfer-encoding',
+        'x-backend' => 'x-backend',
+        'strict-transport-security' => 'strict-transport-security' } },
+  type: 2,
+  url: 'https://c9.io/signin.html?redirect=https%3A%2F%2Fc9.io%2Fapi%2Fnc%2Fauth%3Fresponse_type%3Dtoken%26client_id%3Duser.content%26state%3Dhttp%253A%252F%252Fcore-net-mikhails85.c9users.io%253A8080%252Fapi%252Fclient%252Finfo&login_hint=&style=' }
+2017-12-02 15:08:02.351 +00:00 [] Executed action IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 8701.15ms
+2017-12-02 15:08:02.363 +00:00 [] Request finished in 8989.99ms 200 text/html; charset=utf-8
+2017-12-02 15:08:03.214 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=DDiQ5BOKqe-obsJmPdBdNtua2aTzWdJfLwjvz0lHpFs  
+2017-12-02 15:08:03.229 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-12-02 15:08:03.911 +00:00 [] Request finished in 696.6825ms 200 application/javascript
+2017-12-02 15:08:05.601 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/api/client/info  
+2017-12-02 15:08:05.627 +00:00 [] Executing action method IPFS.Desktop.Controllers.ClientController.Info (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:08:05.724 +00:00 [] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-12-02 15:08:05.751 +00:00 [] Executed action IPFS.Desktop.Controllers.ClientController.Info (IPFS.Desktop) in 125.7578ms
+2017-12-02 15:08:05.752 +00:00 [] Request finished in 151.2941ms 200 application/json; charset=utf-8
+2017-12-02 15:08:37.963 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/controls/app-header/app-header.component.html
+2017-12-02 15:08:44.213 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/files  
+2017-12-02 15:08:44.221 +00:00 [] Executing action method IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:08:44.224 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-02 15:08:46.734 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js
+2017-12-02 15:08:48.027 +00:00 [] Executed action IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 3805.3216ms
+2017-12-02 15:08:48.027 +00:00 [] Request finished in 3814.1126ms 200 text/html; charset=utf-8
+2017-12-02 15:08:48.618 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=vZKs57ZMy3PB8tsflnVRnbTb9rG8rADW2dkM55SEbQU  
+2017-12-02 15:08:48.618 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-12-02 15:08:49.296 +00:00 [] Request finished in 677.9601ms 200 application/javascript
+2017-12-02 15:08:50.658 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-12-02 15:08:50.659 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-12-02 15:08:50.659 +00:00 [] Request finished in 1.1775ms 200 image/png
+2017-12-02 15:09:32.818 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/files  
+2017-12-02 15:09:32.819 +00:00 [] Executing action method IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:09:32.819 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-02 15:09:36.235 +00:00 [] Executed action IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 3415.3120000000004ms
+2017-12-02 15:09:36.240 +00:00 [] Request finished in 3420.7318ms 200 text/html; charset=utf-8
+2017-12-02 15:09:36.440 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=ilieXEutfhZcnbchpey_c6UbYWdySH_ZtmaUYRpxdfI  
+2017-12-02 15:09:36.442 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-12-02 15:09:37.110 +00:00 [] Request finished in 671.0617ms 200 application/javascript
+2017-12-02 15:09:38.795 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-12-02 15:09:38.796 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-12-02 15:09:38.804 +00:00 [] Request finished in 9.2918ms 200 image/png
+2017-12-02 15:09:55.215 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/app/app.component.html
+2017-12-02 15:09:59.437 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/files  
+2017-12-02 15:09:59.438 +00:00 [] Executing action method IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:09:59.439 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-02 15:10:01.273 +00:00 [] Executed action IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 1834.9051000000002ms
+2017-12-02 15:10:01.274 +00:00 [] Request finished in 1837.0284ms 200 text/html; charset=utf-8
+2017-12-02 15:10:01.415 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=86smED4JR8lRdnqArrHpihROToNgKIXBdBdpQ2-2dGY  
+2017-12-02 15:10:01.416 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-12-02 15:10:02.177 +00:00 [] Request finished in 762.1658ms 200 application/javascript
+2017-12-02 15:10:03.454 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-12-02 15:10:03.456 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-12-02 15:10:03.456 +00:00 [] Request finished in 3.2872ms 200 image/png
+2017-12-02 15:10:14.150 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/api/client/info  
+2017-12-02 15:10:14.200 +00:00 [] Executing action method IPFS.Desktop.Controllers.ClientController.Info (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:10:14.269 +00:00 [] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-12-02 15:10:14.302 +00:00 [] Executed action IPFS.Desktop.Controllers.ClientController.Info (IPFS.Desktop) in 109.97070000000001ms
+2017-12-02 15:10:14.303 +00:00 [] Request finished in 153.5485ms 200 application/json; charset=utf-8
+2017-12-02 15:11:35.499 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/app/app.component.html
+2017-12-02 15:12:07.059 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/files  
+2017-12-02 15:12:07.059 +00:00 [] Executing action method IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:12:07.060 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-02 15:12:08.666 +00:00 [] Executed action IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 1606.2074ms
+2017-12-02 15:12:08.666 +00:00 [] Request finished in 1607.2518ms 200 text/html; charset=utf-8
+2017-12-02 15:12:09.266 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=ilieXEutfhZcnbchpey_c6UbYWdySH_ZtmaUYRpxdfI  
+2017-12-02 15:12:09.325 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-12-02 15:12:10.088 +00:00 [] Request finished in 822.1952ms 200 application/javascript
+2017-12-02 15:12:11.680 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-12-02 15:12:11.681 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-12-02 15:12:11.681 +00:00 [] Request finished in 0.8934ms 200 image/png
+2017-12-02 15:12:38.002 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/app/app.component.html
+2017-12-02 15:12:41.916 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/files  
+2017-12-02 15:12:41.918 +00:00 [] Executing action method IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:12:41.919 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-02 15:12:43.609 +00:00 [] Executed action IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 1692.4602ms
+2017-12-02 15:12:43.611 +00:00 [] Request finished in 1696.737ms 200 text/html; charset=utf-8
+2017-12-02 15:12:44.190 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=y5WdHXYc31sHnlaPdWIv09yHC00yZNY7gnzhtRuP8k0  
+2017-12-02 15:12:44.191 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-12-02 15:12:44.872 +00:00 [] Request finished in 682.133ms 200 application/javascript
+2017-12-02 15:12:46.154 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-12-02 15:12:46.154 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-12-02 15:12:46.155 +00:00 [] Request finished in 1.0027ms 200 image/png
+2017-12-02 15:13:33.982 +00:00 [] Node will restart because file changed: /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/ClientApp/app/components/controls/app-add-file-form/app-add-file-form.component.html
+2017-12-02 15:13:42.437 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/files  
+2017-12-02 15:13:42.438 +00:00 [] Executing action method IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:13:42.438 +00:00 [] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-02 15:13:44.839 +00:00 [] Executed action IPFS.Desktop.Controllers.HomeController.Index (IPFS.Desktop) in 2401.3315000000002ms
+2017-12-02 15:13:44.839 +00:00 [] Request finished in 2402.6875ms 200 text/html; charset=utf-8
+2017-12-02 15:13:45.475 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/dist/main-client.js?v=JVablVNQSdexXF_R_2d2zi3c7l_hH6VSNcBnYadlGWs  
+2017-12-02 15:13:45.475 +00:00 [] Sending file. Request path: '/dist/main-client.js'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/dist/main-client.js'
+2017-12-02 15:13:46.231 +00:00 [] Request finished in 756.2203ms 200 application/javascript
+2017-12-02 15:13:47.871 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/favicon.png  
+2017-12-02 15:13:47.871 +00:00 [] Sending file. Request path: '/assets/img/favicon.png'. Physical path: '/home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Desktop/wwwroot/assets/img/favicon.png'
+2017-12-02 15:13:47.872 +00:00 [] Request finished in 2.4513ms 200 image/png
+2017-12-02 15:16:51.056 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/assets/img/logo-symbol.png  
+2017-12-02 15:16:51.068 +00:00 [] The file /assets/img/logo-symbol.png was not modified
+2017-12-02 15:16:51.128 +00:00 [] Request finished in 71.9623ms 304 image/png
+2017-12-02 15:16:52.832 +00:00 [] Request starting HTTP/1.1 GET http://core-net-mikhails85.c9users.io:8080/api/client/info  
+2017-12-02 15:16:52.833 +00:00 [] Executing action method IPFS.Desktop.Controllers.ClientController.Info (IPFS.Desktop) with arguments (null) - ModelState is "Valid"
+2017-12-02 15:16:52.924 +00:00 [] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-12-02 15:16:52.928 +00:00 [] Executed action IPFS.Desktop.Controllers.ClientController.Info (IPFS.Desktop) in 95.79140000000001ms
+2017-12-02 15:16:52.929 +00:00 [] Request finished in 97.7812ms 200 application/json; charset=utf-8
+2017-12-02 15:17:56.513 +00:00 [] Received SIGINT. Waiting for .NET process to exit...
