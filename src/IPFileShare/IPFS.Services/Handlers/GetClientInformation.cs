@@ -15,9 +15,9 @@ namespace IPFS.Services.Handlers
     public class GetClientInformation
     {
         private readonly IIPFSClient client;
-        private readonly ILogger<GetPeerInformation> logger;
+        private readonly ILogger<GetClientInformation> logger;
         
-        public GetClientInformation(IIPFSClient client, ILogger<GetPeerInformation> logger)
+        public GetClientInformation(IIPFSClient client, ILogger<GetClientInformation> logger)
         {
             this.client = client;
             this.logger = logger;
@@ -27,7 +27,7 @@ namespace IPFS.Services.Handlers
         {
             var result = new Result<ClientInfoDTO>();
             
-            var peerInfoTask = client.Message<GetPeerInformation>().SendAsync();
+            var peerInfoTask = client.Message<GetPeerInformationMessage>().SendAsync();
             var peerListTask = client.Message<GetPeersMessage>().SendAsync();
             var localStorageTask = client.Message<GetLocalObjectListMessage>().SendAsync();
             

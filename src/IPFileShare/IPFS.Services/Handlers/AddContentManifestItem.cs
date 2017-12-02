@@ -5,6 +5,8 @@ using IPFS.Utils.Logger;
 using IPFS.Results;
 using System.Threading.Tasks;
 using IPFS.Integration.Messages;
+using IPFS.Integration.Models;
+using IPFS.Integration.Errors;
 using IPFS.Integration.Abstractions;
 using IPFS.Services.Contracts;
 using IPFS.Utils.DI;
@@ -27,7 +29,7 @@ namespace IPFS.Services.Handlers
         {
             var result = new VoidResult();
             
-            var addContentTask = GetContentTask(IContentManifestItem item);
+            var addContentTask = GetContentTask(item);
             var addThumbnailTask = this.client.Message<AddFileMessage>().SendAsync(item.Resource);
             
             await Task.WhenAll(addContentTask, addThumbnailTask);
@@ -48,15 +50,52 @@ namespace IPFS.Services.Handlers
             if(result.Errors.Any())
                 return result;
             
-            var peerResult = await client.Message<GetPeerInformation>().SendAsync();
+            var peerResult = await client.Message<GetPeerInformationMessage>().SendAsync();
             
             if(!peerResult.Success)
             {
                 result.AddErrors(peerResult.Errors);
-                return peerResult;
+                return result;
             }
             
-            var resolveResult = await client.Message<Res> 
+            var resolveResult = await client.Message<ResolvePublishedObjectMessage>().SendAsync(peerResult.Value.ID);
+            
+            var manifest = new ContentManifest();
+            manifest.PeedID = peerResult.Value.ID;
+            
+            if(!resolveResult.Success && resolveResult.Errors.All(x=>x.Code != (int)ErrorCodes.HttpRequest))
+            {
+                result.AddErrors(resolveResult.Errors);
+                return result;
+            }
+            
+            if(resolveResult.Success)
+            {
+                var manifestResult = await client.Message<GetContentManifestMessage>().SendAsync(peerResult.Value.ID);
+                if(!manifestResult.Success)
+                {
+                    result.AddErrors(manifestResult.Errors);
+                    return result;
+                }
+                manifest = manifestResult.Value;
+            }
+            
+            manifest.PeedID = peerResult.Value.ID;
+            manifest.LastMidification = DateTime.UtcNow;
+            manifest.Content.Add(new ContentManifestItem{
+                Title = item.Title,
+                ThumbnailHash = addThumbnailResult.Value.Hash,
+                Description = item.Description,
+                Type = item.Type,
+                ResourceHash = addContentResult.Value.Hash
+            });
+            
+            var updateManifest = await client.Message<AddContentManifestMessage>().SendAsync(manifest);
+            
+            if(!updateManifest.Success)
+            {
+                result.AddErrors(updateManifest.Errors);
+            }
             
             return result; 
         }
