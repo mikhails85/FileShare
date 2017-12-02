@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using IPFS.Services.Handlers;
 using IPFS.Utils.Logger;
 using IPFS.Desktop.ControllerExtensions; 
+using IPFS.Desktop.Models;
 
 namespace IPFS.Desktop.Controllers
 {
@@ -23,6 +24,14 @@ namespace IPFS.Desktop.Controllers
         public async Task<IActionResult> Info()
         {
             var result = await this.Handler<GetClientInformation>().Get();
+            
+            return this.Result(result);
+        }
+        
+        [HttpPost("[action]")]
+        public async Task<IActionResult> AddNewContent(ContentManifestItem item)
+        {
+            var result = await this.Handler<AddContentManifestItem>().Add(item);
             
             return this.Result(result);
         }

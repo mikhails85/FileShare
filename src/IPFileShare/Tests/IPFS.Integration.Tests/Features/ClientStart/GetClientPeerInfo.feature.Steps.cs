@@ -15,7 +15,7 @@ namespace IPFS.Integration.Tests.Features.ClientStart
         
         private async void When_user_send_peer_info_request()
         {
-            result = await client.Message<GetPeerInformation>().SendAsync();
+            result = await client.Message<GetPeerInformationMessage>().SendAsync();
         }
         
         private void Then_client_should_return_peer_information()

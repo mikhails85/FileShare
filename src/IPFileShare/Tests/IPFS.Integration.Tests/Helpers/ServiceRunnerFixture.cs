@@ -63,7 +63,7 @@ namespace IPFS.Integration.Tests.Helpers
                 return new RESTClient(ProcessConfig.API, messageProvider);
             })
             .AutoRegisterInstanceOf<IApiMessage>()
-            .BuildServiceProvider();    
+            .BuildServiceProvider();
         }
     }
 }

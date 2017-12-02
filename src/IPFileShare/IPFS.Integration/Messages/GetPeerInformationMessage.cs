@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace IPFS.Integration.Messages
 {
-    public class GetPeerInformation: IApiMessage
+    public class GetPeerInformationMessage: IApiMessage
     {
         public IIPFSClient Client { get; set;}
         
-        private readonly ILogger<GetPeerInformation> Log;
+        private readonly ILogger<GetPeerInformationMessage> Log;
         
-        public GetPeerInformation(ILogger<GetPeerInformation> logger)
+        public GetPeerInformationMessage(ILogger<GetPeerInformationMessage> logger)
         {
             this.Log = logger;
         }

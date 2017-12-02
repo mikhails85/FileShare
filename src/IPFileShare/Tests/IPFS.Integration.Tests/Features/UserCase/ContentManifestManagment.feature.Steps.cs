@@ -25,7 +25,7 @@ namespace IPFS.Integration.Tests.Features.UserCase
         
         private async void When_user_get_peer_information()
         {
-            peerInfo = await client.Message<GetPeerInformation>().SendAsync();
+            peerInfo = await client.Message<GetPeerInformationMessage>().SendAsync();
             Assert.True(peerInfo.Success);
         }
         
