@@ -22,6 +22,8 @@ import {
   AppSidebarHeaderComponent,
   AppSidebarMinimizerComponent,
   AppClientInfoComponent,
+  AppAddFileFormComponent,
+  AppAppLocalFileListComponent,
   APP_SIDEBAR_NAV
 } from './components/controls';
 
@@ -36,6 +38,8 @@ const APP_COMPONENTS = [
   AppSidebarHeaderComponent,
   AppSidebarMinimizerComponent,
   AppClientInfoComponent,
+  AppAddFileFormComponent,
+  AppAppLocalFileListComponent,
   APP_SIDEBAR_NAV
 ]
 

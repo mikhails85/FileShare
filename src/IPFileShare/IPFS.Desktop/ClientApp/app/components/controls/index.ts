@@ -9,3 +9,5 @@ export * from './app-sidebar-header';
 export * from './app-sidebar-minimizer';
 export * from './app-sidebar-nav';
 export * from './app-client-info';
+export * from './app-add-file-form';
+export * from './app-local-file-list';
