@@ -35,5 +35,13 @@ namespace IPFS.Desktop.Controllers
             
             return this.Result(result);
         }
+        
+        [HttpGet("[action]")]
+        public async Task<IActionResult> LocalContent()
+        {
+            var result = await this.Handler<GetLocalManifestItems>().Get();
+            
+            return this.Result(result);
+        }
     }
 }

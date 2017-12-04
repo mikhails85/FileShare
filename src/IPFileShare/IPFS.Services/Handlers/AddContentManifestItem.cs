@@ -10,6 +10,7 @@ using IPFS.Integration.Errors;
 using IPFS.Integration.Abstractions;
 using IPFS.Services.Contracts;
 using IPFS.Utils.DI;
+using IPFS.Services.DTO;
 
 namespace IPFS.Services.Handlers
 {
@@ -29,26 +30,46 @@ namespace IPFS.Services.Handlers
         {
             var result = new VoidResult();
             
-            var addContentTask = GetContentTask(item);
-            var addThumbnailTask = this.client.Message<AddFileMessage>().SendAsync(item.Resource);
+            var uploadFileResult = await UploadFile(item);
             
-            await Task.WhenAll(addContentTask, addThumbnailTask);
-            
-            var addContentResult = await addContentTask;
-            var addThumbnailResult = await addThumbnailTask;
-            
-            if(!addContentResult.Success)
+            if(!uploadFileResult.Success)
             {
-                result.AddErrors(addContentResult.Errors);
-            }
-            
-            if(!addThumbnailResult.Success)
-            {
-                result.AddErrors(addThumbnailResult.Errors);
-            }
-            
-            if(result.Errors.Any())
+                result.AddErrors(uploadFileResult.Errors);
                 return result;
+            }
+            
+            var manifestResult = await GetManifest();
+            
+            if(!manifestResult.Success)
+            {
+                result.AddErrors(manifestResult.Errors);
+                return result;
+            }
+            
+            var manifest = manifestResult.Value;
+            
+            manifest.LastMidification = DateTime.UtcNow;
+            manifest.Content.Add(new ContentManifestItem{
+                Title = item.Title,
+                ThumbnailHash = uploadFileResult.Value.ThumbnailHash,
+                Description = item.Description,
+                Type = item.Type,
+                ResourceHash = uploadFileResult.Value.ResourceHash
+            });
+            
+            var updateManifest = await client.Message<AddContentManifestMessage>().SendAsync(manifest);
+            
+            if(!updateManifest.Success)
+            {
+                result.AddErrors(updateManifest.Errors);
+            }
+            
+            return result; 
+        }
+        
+        private async Task<Result<ContentManifest>> GetManifest()
+        {
+            var result = new  Result<ContentManifest>();
             
             var peerResult = await client.Message<GetPeerInformationMessage>().SendAsync();
             
@@ -80,24 +101,60 @@ namespace IPFS.Services.Handlers
                 manifest = manifestResult.Value;
             }
             
-            manifest.PeedID = peerResult.Value.ID;
-            manifest.LastMidification = DateTime.UtcNow;
-            manifest.Content.Add(new ContentManifestItem{
-                Title = item.Title,
-                ThumbnailHash = addThumbnailResult.Value.Hash,
-                Description = item.Description,
-                Type = item.Type,
-                ResourceHash = addContentResult.Value.Hash
-            });
+            result.SetValue(manifest);
+            return result;
+        }
+        
+        private async Task<Result<UploadFileDTO>> UploadFile(IContentManifestItem item)
+        {
+            var result = new Result<UploadFileDTO>();
             
-            var updateManifest = await client.Message<AddContentManifestMessage>().SendAsync(manifest);
+            var addContentTask = GetContentTask(item);
             
-            if(!updateManifest.Success)
+            var resourceHash = string.Empty;
+            var thumbnailHash = string.Empty;
+            
+            if(string.IsNullOrWhiteSpace(item.Thumbnail))
             {
-                result.AddErrors(updateManifest.Errors);
+                var addContentResult = await addContentTask;
+                if(!addContentResult.Success)
+                {
+                    result.AddErrors(addContentResult.Errors);
+                    return result;
+                }    
+                resourceHash = addContentResult.Value.Hash;
+            }
+            else 
+            {
+                var addThumbnailTask = this.client.Message<AddFileMessage>().SendAsync(item.Thumbnail);
+                await Task.WhenAll(addContentTask, addThumbnailTask);
+                
+                var addThumbnailResult = await addThumbnailTask;
+                if(!addThumbnailResult.Success)
+                {
+                    result.AddErrors(addThumbnailResult.Errors);
+                }
+                
+                var addContentResult = await addContentTask;
+                if(!addContentResult.Success)
+                {
+                    result.AddErrors(addContentResult.Errors);
+                }
+                
+                if(result.Errors.Any())
+                {
+                    return result;
+                }
+                resourceHash = addContentResult.Value.Hash;
+                thumbnailHash = addThumbnailResult.Value.Hash;
             }
             
-            return result; 
+            result.SetValue(new UploadFileDTO{
+                ResourceHash = resourceHash, 
+                ThumbnailHash = thumbnailHash
+            });
+            
+            return result;
         }
         
         private Task<Result<IPFSHash>> GetContentTask(IContentManifestItem item)
