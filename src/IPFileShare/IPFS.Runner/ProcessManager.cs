@@ -2,6 +2,7 @@ using IPFS.Results;
 using IPFS.Runner.Errors;
 using System;
 using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,11 +11,13 @@ namespace IPFS.Runner
     public static class ProcessManager
     {
         private static Process process;
-        
+        private static ProcessConfig processConfig;
+
         public static Action<VoidResult> OnExit{ get; set; }
         
         public static async Task<VoidResult> StartProcess(string appId, ProcessConfig config)
-        {   
+        {
+            processConfig = config;
            var result = new VoidResult();    
           
            if (IsAlreadyRunning(appId))
@@ -32,10 +35,19 @@ namespace IPFS.Runner
             {
                 return;
             }
-            
-            process.Kill ();
-		    process.Dispose ();
-			process = null;
+           
+            if(!process.HasExited)
+            {
+                process.Kill();
+                process.Dispose();
+                process = null;
+            }
+
+            var lockFile =Path.Combine(processConfig.ConfigPath, "repo.lock");
+            if(File.Exists(lockFile))
+            {
+                File.Delete(lockFile);
+            }
         }
         
         private static bool IsAlreadyRunning(string appId)
@@ -59,13 +71,13 @@ namespace IPFS.Runner
             
             var c = Console.Out;
             
-            process.Exited += (sender, args) =>
+            process.Exited += async (sender, args) =>
             {
                 ExitHandler();
                 
                 var result = new VoidResult();   
                 
-                var errorMessage = process.ExitCode != 0 ? process.StandardError.ReadToEnd():"Exit process";
+                var errorMessage = process.ExitCode != 0 ? await process.StandardError.ReadToEndAsync():"Exit process";
                 result.AddErrors(new ProcessExitedWithError(errorMessage));
                 
                 tcs.SetResult(result);
@@ -103,10 +115,10 @@ namespace IPFS.Runner
                 
             if (process.ExitCode != 0)
             {
-                var errorMessage = process.StandardError.ReadToEnd();
-                    
-                exitResult.AddErrors(new ProcessExitedWithError("The process did not exit correctly. " +
-                    "The corresponding error message was: " + errorMessage));    
+                //var errorMessage = process.StandardError.ReadToEnd();
+
+                exitResult.AddErrors(new ProcessExitedWithError("The process did not exit correctly. "));// +
+                 //   "The corresponding error message was: " + errorMessage));    
             }
 
             OnExit?.Invoke(exitResult);
@@ -125,6 +137,14 @@ namespace IPFS.Runner
                 RedirectStandardOutput = true,
                 RedirectStandardError = true
             };
+
+            if(config.EnvironmentVariables != null)
+            {
+                foreach(var key in config.EnvironmentVariables.Keys)
+                {
+                    start.EnvironmentVariables.Add(key, config.EnvironmentVariables[key]);
+                }
+            }
 
             return start;
         }

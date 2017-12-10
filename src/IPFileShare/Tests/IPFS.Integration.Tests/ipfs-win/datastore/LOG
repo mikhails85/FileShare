@@ -1,0 +1,20 @@
+=============== Dec 10, 2017 (EET) ===============
+02:06:36.258765 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+02:06:36.379200 db@open opening
+02:06:36.429152 version@stat F·[] S·0B[] Sc·[]
+02:06:36.456182 db@janitor F·2 G·0
+02:06:36.456182 db@open done T·65.8474ms
+02:06:37.745890 db@close closing
+02:06:37.761085 db@close done T·15.1944ms
+=============== Dec 10, 2017 (EET) ===============
+02:06:37.964293 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+02:06:37.988651 version@stat F·[] S·0B[] Sc·[]
+02:06:37.988651 db@open opening
+02:06:38.001644 journal@recovery F·1
+02:06:38.002646 journal@recovery recovering @1
+02:06:38.061541 memdb@flush created L0@2 N·2 S·211B "/lo..oot,v2":"/lo..ins,v1"
+02:06:38.089119 version@stat F·[1] S·211B[211B] Sc·[0.25]
+02:06:38.235932 db@janitor F·3 G·0
+02:06:38.235932 db@open done T·247.2805ms
+02:06:38.491055 db@close closing
+02:06:38.518813 db@close done T·27.7587ms

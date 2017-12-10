@@ -38,6 +38,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Update="./ipfs-win/**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <None Update="./appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

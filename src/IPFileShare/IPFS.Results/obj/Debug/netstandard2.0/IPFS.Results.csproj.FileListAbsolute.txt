@@ -15,3 +15,11 @@ C:\MyProjects\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IP
 C:\MyProjects\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.dll
 C:\MyProjects\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.pdb
 C:\MyProjects\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.csprojResolveAssemblyReference.cache
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\bin\Debug\netstandard2.0\IPFS.Results.deps.json
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\bin\Debug\netstandard2.0\IPFS.Results.dll
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\bin\Debug\netstandard2.0\IPFS.Results.pdb
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.csproj.CoreCompileInputs.cache
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.AssemblyInfoInputs.cache
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.AssemblyInfo.cs
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.dll
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.pdb

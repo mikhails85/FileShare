@@ -14,6 +14,61 @@
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".ipfs-win\blocks\2H\CIQN5PVU4ECEKNEVXWRYKCPTVMIPHP5AWWKOCGCPXVNMF7ZWU6UG2HI.data" />
+    <None Include=".ipfs-win\blocks\7J\CIQKKLBWAIBQZOIS5X7E32LQAL6236OUKZTMHPQSFIXPWXNZHQOV7JQ.data" />
+    <None Include=".ipfs-win\blocks\7R\CIQIVZGLOUFY5L4TEYD5WLSCRDDEAW2TNVZSH3OBM5UKNOREHYSY7RA.data" />
+    <None Include=".ipfs-win\blocks\B5\CIQDOZU3EAGXWK3PLVFOFOZOAE5USX3XM6I5CSHSQGTML2BAGN7MB5I.data" />
+    <None Include=".ipfs-win\blocks\IL\CIQJFGRQHQ45VCQLM7AJNF2GF5UHUAGGHC6LLAH6VYDEKLQMD4QLILY.data" />
+    <None Include=".ipfs-win\blocks\JN\CIQPHMHGQLLZXC32FQQW2YVM4KGFORVFJAQYY55VK3WJGLZ2MS4RJNQ.data" />
+    <None Include=".ipfs-win\blocks\L5\CIQBIQXZ4NWWDXUSIYSCX7RE6EBXHMGENZNMUDEMGNKMGT2K6LLUL5Y.data" />
+    <None Include=".ipfs-win\blocks\LG\CIQJBQD2O6K4CGJVCCTJNUP57QHR4SKHZ74OIITBBGLOMCO3ZOLWLGA.data" />
+    <None Include=".ipfs-win\blocks\N2\CIQDWKPBHXLJ3XVELRJZA2SYY7OGCSX6FRSIZS2VQQPVKOA2Z4VXN2I.data" />
+    <None Include=".ipfs-win\blocks\OO\CIQBT4N7PS5IZ5IG2ZOUGKFK27IE33WKGJNDW2TY3LSBNQ34R6OVOOQ.data" />
+    <None Include=".ipfs-win\blocks\PM\CIQKNNRB2NFYXUZDJ2UWNMSKYLGTKUYDRQTJCDI7JTUDFH6YOYNUPMA.data" />
+    <None Include=".ipfs-win\blocks\QV\CIQOHMGEIKMPYHAUTL57JSEZN64SIJ5OIHSGJG4TJSSJLGI3PBJLQVI.data" />
+    <None Include=".ipfs-win\blocks\R3\CIQBED3K6YA5I3QQWLJOCHWXDRK5EXZQILBCKAPEDUJENZ5B5HJ5R3A.data" />
+    <None Include=".ipfs-win\blocks\SHARDING" />
+    <None Include=".ipfs-win\blocks\SH\CIQL3XIOKVDAW5KQF6NNWGFFYAHEQP63TJOVZHAEO7XZBD7KQOCSSHY.data" />
+    <None Include=".ipfs-win\blocks\X3\CIQFTFEEHEDF6KLBT32BFAGLXEZL4UWFNWM4LFTLMXQBCERZ6CMLX3Y.data" />
+    <None Include=".ipfs-win\blocks\_README" />
+    <None Include=".ipfs-win\config" />
+    <None Include=".ipfs-win\datastore\000002.ldb" />
+    <None Include=".ipfs-win\datastore\000003.log" />
+    <None Include=".ipfs-win\datastore\CURRENT" />
+    <None Include=".ipfs-win\datastore\LOCK" />
+    <None Include=".ipfs-win\datastore\LOG" />
+    <None Include=".ipfs-win\datastore\MANIFEST-000004" />
+    <None Include=".ipfs-win\datastore_spec" />
+    <None Include=".ipfs-win\version" />
+    <None Include=".ipfs\api" />
+    <None Include=".ipfs\blocks\2H\CIQN5PVU4ECEKNEVXWRYKCPTVMIPHP5AWWKOCGCPXVNMF7ZWU6UG2HI.data" />
+    <None Include=".ipfs\blocks\7J\CIQKKLBWAIBQZOIS5X7E32LQAL6236OUKZTMHPQSFIXPWXNZHQOV7JQ.data" />
+    <None Include=".ipfs\blocks\7R\CIQIVZGLOUFY5L4TEYD5WLSCRDDEAW2TNVZSH3OBM5UKNOREHYSY7RA.data" />
+    <None Include=".ipfs\blocks\B5\CIQDOZU3EAGXWK3PLVFOFOZOAE5USX3XM6I5CSHSQGTML2BAGN7MB5I.data" />
+    <None Include=".ipfs\blocks\IL\CIQJFGRQHQ45VCQLM7AJNF2GF5UHUAGGHC6LLAH6VYDEKLQMD4QLILY.data" />
+    <None Include=".ipfs\blocks\JN\CIQPHMHGQLLZXC32FQQW2YVM4KGFORVFJAQYY55VK3WJGLZ2MS4RJNQ.data" />
+    <None Include=".ipfs\blocks\L5\CIQBIQXZ4NWWDXUSIYSCX7RE6EBXHMGENZNMUDEMGNKMGT2K6LLUL5Y.data" />
+    <None Include=".ipfs\blocks\LG\CIQJBQD2O6K4CGJVCCTJNUP57QHR4SKHZ74OIITBBGLOMCO3ZOLWLGA.data" />
+    <None Include=".ipfs\blocks\N2\CIQDWKPBHXLJ3XVELRJZA2SYY7OGCSX6FRSIZS2VQQPVKOA2Z4VXN2I.data" />
+    <None Include=".ipfs\blocks\OO\CIQBT4N7PS5IZ5IG2ZOUGKFK27IE33WKGJNDW2TY3LSBNQ34R6OVOOQ.data" />
+    <None Include=".ipfs\blocks\PM\CIQKNNRB2NFYXUZDJ2UWNMSKYLGTKUYDRQTJCDI7JTUDFH6YOYNUPMA.data" />
+    <None Include=".ipfs\blocks\QV\CIQOHMGEIKMPYHAUTL57JSEZN64SIJ5OIHSGJG4TJSSJLGI3PBJLQVI.data" />
+    <None Include=".ipfs\blocks\R3\CIQBED3K6YA5I3QQWLJOCHWXDRK5EXZQILBCKAPEDUJENZ5B5HJ5R3A.data" />
+    <None Include=".ipfs\blocks\SHARDING" />
+    <None Include=".ipfs\blocks\SH\CIQL3XIOKVDAW5KQF6NNWGFFYAHEQP63TJOVZHAEO7XZBD7KQOCSSHY.data" />
+    <None Include=".ipfs\blocks\X3\CIQFTFEEHEDF6KLBT32BFAGLXEZL4UWFNWM4LFTLMXQBCERZ6CMLX3Y.data" />
+    <None Include=".ipfs\blocks\_README" />
+    <None Include=".ipfs\config" />
+    <None Include=".ipfs\datastore\000077.ldb" />
+    <None Include=".ipfs\datastore\CURRENT" />
+    <None Include=".ipfs\datastore\LOCK" />
+    <None Include=".ipfs\datastore\LOG" />
+    <None Include=".ipfs\datastore\MANIFEST-000076" />
+    <None Include=".ipfs\datastore_spec" />
+    <None Include=".ipfs\repo.lock" />
+    <None Include=".ipfs\version" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.0.0" />
@@ -22,5 +77,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
     <PackageReference Include="Serilog" Version="2.5.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".ipfs-win\keystore\" />
   </ItemGroup>
 </Project>

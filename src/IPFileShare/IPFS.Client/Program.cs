@@ -46,9 +46,9 @@ namespace IPFS.Client
         
             Console.WriteLine(result.Success ? "Success" : result.Errors[0].Message);
             
-            var monufest = await rest.Message<GetContentManifestMessage>().SendAsync(result.Value.ID);
+           // var monufest = await rest.Message<GetContentManifestMessage>().SendAsync(result.Value.ID);
         
-            Console.WriteLine(monufest.Success ? "Success" : monufest.Errors[0].Message);
+          //  Console.WriteLine(monufest.Success ? "Success" : monufest.Errors[0].Message);
             
             
             Console.WriteLine("Ready to Stop");

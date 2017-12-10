@@ -3,6 +3,7 @@ using IPFS.Integration.Models;
 using IPFS.Results;
 using LightBDD.Framework;
 using LightBDD.Framework.Commenting;
+using System.IO;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -15,7 +16,7 @@ namespace IPFS.Integration.Tests.Features.UserCase
         
         private async void When_user_share_folder()
         {
-            result = await client.Message<AddFolderMessage>().SendAsync("./TestData");
+            result = await client.Message<AddFolderMessage>().SendAsync(Path.Combine(".","TestData"));
         }
         
         private void Then_client_should_return_folder_id()

@@ -21,3 +21,16 @@ C:/MyProjects/FileShare/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.
 C:/MyProjects/FileShare/src/IPFileShare/IPFS.Integration/obj/Debug/netstandard2.0/IPFS.Integration.pdb
 /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Utils.dll
 /home/ubuntu/workspace/IPFS/src/IPFileShare/IPFS.Integration/bin/Debug/netstandard2.0/IPFS.Utils.pdb
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Integration.deps.json
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Integration.dll
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Integration.pdb
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Results.dll
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Utils.dll
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Results.pdb
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\bin\Debug\netstandard2.0\IPFS.Utils.pdb
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.csprojResolveAssemblyReference.cache
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.csproj.CoreCompileInputs.cache
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.AssemblyInfoInputs.cache
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.AssemblyInfo.cs
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.dll
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Integration\obj\Debug\netstandard2.0\IPFS.Integration.pdb

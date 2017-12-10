@@ -3,6 +3,7 @@ using IPFS.Integration.Models;
 using IPFS.Results;
 using LightBDD.Framework;
 using LightBDD.Framework.Commenting;
+using System.IO;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -17,7 +18,7 @@ namespace IPFS.Integration.Tests.Features.UserCase
         
         private async void When_user_share_file()
         {
-            result = await client.Message<AddFileMessage>().SendAsync("./TestData/01. Patron Saint O Thieves.mp3");
+            result = await client.Message<AddFileMessage>().SendAsync(Path.Combine(".","TestData","01. Patron Saint O Thieves.mp3"));
         }
         
         private void Then_client_should_return_file_id()
