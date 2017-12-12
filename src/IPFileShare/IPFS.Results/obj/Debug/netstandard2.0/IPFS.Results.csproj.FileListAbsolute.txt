@@ -23,3 +23,4 @@ F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Result
 F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.AssemblyInfo.cs
 F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.dll
 F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.pdb
+F:\mikhail_projects\MyProject\ipfs-project\FileShare\src\IPFileShare\IPFS.Results\obj\Debug\netstandard2.0\IPFS.Results.csprojResolveAssemblyReference.cache

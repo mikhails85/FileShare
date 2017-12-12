@@ -1,0 +1,36 @@
+{
+    "name": "ipfs.desktop",
+    "version": "0.0.1",
+    "description": "IPFS Desktop App",
+    "main": "main.js",
+    "scripts": {
+        "build:ui": "cd ../IPFS.Desktop.UI && ng build --op=../IPFS.Desktop.App/ui",
+        "build:bridg:win32": "cd ../IPFS.Bridge && dotnet publish -r win10-x64 --output ../IPFS.Desktop.App/api",
+        "package:win32": "electron-packager . ipfs-desktop-client --overwrite --platform=win32 --arch=ia32 --icon=ui/assets/img/favicon.ico --out=../bin --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"IPFS Desktop Client\"",
+        "build:win32": "npm run build:bridg:win32 && npm run build:ui && npm run package:win32",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mikhails85/FileShare.git"
+    },
+    "keywords": [
+        "IPFS",
+        "Desktop",
+        "App"
+    ],
+    "author": "Mikhail Sapunov",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mikhails85/FileShare/issues"
+    },
+    "homepage": "https://github.com/mikhails85/FileShare#readme",
+    "dependencies": {
+        "detect-port": "^1.2.2",
+        "socket.io": "^2.0.4"
+    },
+    "devDependencies": {
+        "electron": "1.7.9",
+        "electron-packager": "^10.1.0"
+    }
+}
