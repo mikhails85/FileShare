@@ -1,16 +1,20 @@
 ﻿using IPFS.Desktop.Bridge.EventHandlers;
 using Quobject.SocketIoClientDotNet.Client;
 using System;
+using IPFS.Utils.Logger;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace IPFS.Desktop.Bridge.AppConfig
 {
-    public static class AppBridge
+    public class AppBridge
     {
         private static string SocketPort { get; set; }
         private static Socket socket;
 
         private static object syncRoot = new Object();
 
+        private static ILogger<AppBridge> log = AppDI.ServiceProvider.GetService<ILogger<AppBridge>>();
+        
         public static void SetupPort(string[] args)
         {
             ParseSocketPort(args);
@@ -28,7 +32,8 @@ namespace IPFS.Desktop.Bridge.AppConfig
                 if (argument.ToUpper().Contains("ELECTRONPORT"))
                 {
                     SocketPort = argument.ToUpper().Replace("/ELECTRONPORT=", "");
-                    Console.WriteLine("Use Electron Port: " + SocketPort);
+                    
+                    log.WarningMessage("Use Electron Port: " + SocketPort);
                 }
             }
         }
@@ -46,7 +51,7 @@ namespace IPFS.Desktop.Bridge.AppConfig
                             socket = IO.Socket("http://localhost:" + SocketPort);
                             socket.On(Socket.EVENT_CONNECT, () =>
                             {
-                                Console.WriteLine("BridgeConnector connected!");
+                                log.WarningMessage("Bridge connected!");
                             });
                         }
                     }

@@ -18,7 +18,9 @@ namespace IPFS.Desktop.Bridge.AppConfig
             .AddSingleton<Serilog.ILogger>((ctx) => {
                 return new Serilog.LoggerConfiguration()
                             .MinimumLevel.Debug()
-                            .WriteTo.Console()
+                            .WriteTo.File(@"Logs/app-log.txt", 
+                                  rollingInterval: RollingInterval.Day, 
+                                  outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{u3}] {Message:lj}{NewLine}{Exception}")
                             .CreateLogger();
             })
             .AddTransient(typeof(IPFS.Utils.Logger.ILogger<>), typeof(IPFS.Utils.Logger.Implementation.SeriLogger<>))

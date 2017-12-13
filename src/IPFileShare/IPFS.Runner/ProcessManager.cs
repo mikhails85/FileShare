@@ -25,6 +25,8 @@ namespace IPFS.Runner
                result.AddErrors(new ProcessAlreadyRunError());
                return result;
            }
+          
+           RemoveLockFile();
            
            return await Starting(config);
         }
@@ -43,6 +45,10 @@ namespace IPFS.Runner
                 process = null;
             }
 
+        }
+
+        private static void RemoveLockFile()
+        {
             var lockFile =Path.Combine(processConfig.ConfigPath, "repo.lock");
             if(File.Exists(lockFile))
             {
