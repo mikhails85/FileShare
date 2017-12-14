@@ -3,6 +3,7 @@ using IPFS.Runner.Errors;
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -49,7 +50,8 @@ namespace IPFS.Runner
 
         private static void RemoveLockFile()
         {
-            var lockFile =Path.Combine(processConfig.ConfigPath, "repo.lock");
+            var currentPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            var lockFile =Path.Combine(currentPath, processConfig.ConfigPath, "repo.lock");
             if(File.Exists(lockFile))
             {
                 File.Delete(lockFile);
@@ -83,7 +85,10 @@ namespace IPFS.Runner
                 
                 var result = new VoidResult();   
                 
-                var errorMessage = process.ExitCode != 0 ? await process.StandardError.ReadToEndAsync():"Exit process";
+                var errorMessage = "Exit process";
+                if (process.ExitCode != 0)
+                    errorMessage = await process.StandardError.ReadToEndAsync();
+
                 result.AddErrors(new ProcessExitedWithError(errorMessage));
                 
                 tcs.SetResult(result);
@@ -144,11 +149,13 @@ namespace IPFS.Runner
                 RedirectStandardError = true
             };
 
-            if(config.EnvironmentVariables != null)
+            var currentPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+
+            if (config.EnvironmentVariables != null)
             {
                 foreach(var key in config.EnvironmentVariables.Keys)
                 {
-                    start.EnvironmentVariables.Add(key, config.EnvironmentVariables[key]);
+                    start.EnvironmentVariables.Add(key, Path.Combine(currentPath, config.EnvironmentVariables[key]));
                 }
             }
 

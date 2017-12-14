@@ -1,8 +1,8 @@
 ﻿using IPFS.Desktop.Bridge.EventHandlers;
-using Quobject.SocketIoClientDotNet.Client;
-using System;
 using IPFS.Utils.Logger;
 using Microsoft.Extensions.DependencyInjection;
+using Quobject.SocketIoClientDotNet.Client;
+using System;
 
 namespace IPFS.Desktop.Bridge.AppConfig
 {

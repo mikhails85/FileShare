@@ -1,5 +1,7 @@
 const electron = require('electron')
-    // Module to control application life.
+const { ipcMain } = require('electron')
+
+// Module to control application life.
 const app = electron.app
     // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
@@ -65,21 +67,30 @@ app.on('activate', function() {
 // code. You can also put them in separate files and require them here.
 function startSocketApiBridge() {
     portfinder(8000, (error, port) => {
+
         io = require('socket.io')(port);
-        startAspCoreBackend(port);
+        startBridgeBackend(port);
 
         io.on('connection', (socket) => {
             console.log('ASP.NET Core Application connected...');
             createWindow();
+
+            ipcMain.on('UI:SeyHello', (event, arg) => {
+                io.emit('Api:SeyHello');
+                io.on('App:SeyHello', function(data) {
+                    event.sender.send('App:SeyHello', data);
+                });
+            })
+
         });
     });
 }
 
-function startAspCoreBackend(electronPort) {
+function startBridgeBackend(electronPort) {
 
     const parameters = ['/electronPort=' + electronPort];
 
-    const binFilePath = path.join(__dirname, 'api', 'IPFS.Bridge.exe');
+    const binFilePath = path.join(__dirname, 'api', 'IPFS.Desktop.Bridge.exe');
 
     apiProcess = process(binFilePath, parameters);
 

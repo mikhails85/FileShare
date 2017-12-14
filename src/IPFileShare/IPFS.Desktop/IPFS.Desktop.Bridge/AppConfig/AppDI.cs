@@ -1,10 +1,10 @@
-﻿using IPFS.Integration;
+﻿using IPFS.Desktop.Bridge.EventHandlers;
+using IPFS.Integration;
 using IPFS.Integration.Abstractions;
 using IPFS.Integration.Messages;
 using IPFS.Utils.DI;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
-using IPFS.Desktop.Bridge.EventHandlers;
 
 namespace IPFS.Desktop.Bridge.AppConfig
 {

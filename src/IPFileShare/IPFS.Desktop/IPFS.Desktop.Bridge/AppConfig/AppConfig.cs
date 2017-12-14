@@ -1,6 +1,7 @@
 ﻿using IPFS.Runner;
 using Microsoft.Extensions.Configuration;
 using System.IO;
+using System.Reflection;
 
 namespace IPFS.Desktop.Bridge.AppConfig
 {
@@ -12,7 +13,7 @@ namespace IPFS.Desktop.Bridge.AppConfig
         public static void SetupConfig()
         {
             var builder = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
+            .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location))
             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
             .AddEnvironmentVariables();
 

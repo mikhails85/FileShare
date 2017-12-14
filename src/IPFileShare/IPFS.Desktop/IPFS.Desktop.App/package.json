@@ -4,9 +4,9 @@
     "description": "IPFS Desktop App",
     "main": "main.js",
     "scripts": {
-        "build:ui": "cd ../IPFS.Desktop.UI && ng build --op=../IPFS.Desktop.App/ui",
-        "build:bridg:win32": "cd ../IPFS.Bridge && dotnet publish -r win10-x64 --output ../IPFS.Desktop.App/api",
-        "package:win32": "electron-packager . ipfs-desktop-client --overwrite --platform=win32 --arch=ia32 --icon=ui/assets/img/favicon.ico --out=../bin --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"IPFS Desktop Client\"",
+        "build:ui": "cd ..\\IPFS.Desktop.UI && ng build --op=..\\IPFS.Desktop.App\\ui",
+        "build:bridg:win32": "cd ..\\IPFS.Desktop.Bridge && dotnet publish -r win10-x64 --output ..\\IPFS.Desktop.App\\api",
+        "package:win32": "electron-packager . ipfs-desktop-client --overwrite --platform=win32 --arch=ia32 --icon=ui\\assets\\img\\favicon.ico --out=..\\bin --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"IPFS Desktop Client\"",
         "build:win32": "npm run build:bridg:win32 && npm run build:ui && npm run package:win32",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
